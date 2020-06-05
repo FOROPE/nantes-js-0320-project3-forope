@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function Navigation() {
   return (
-    <div>
+    <>
       <nav>
-        <p>Logo</p>
+        <img src="#" alt="logo" />
         <ul>
           <li>Entreprise</li>
           <li>Particulier</li>
@@ -12,6 +12,6 @@ export default function Navigation() {
           <li>Forope</li>
         </ul>
       </nav>
-    </div>
+    </>
   );
 }
