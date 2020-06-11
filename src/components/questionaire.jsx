@@ -1,4 +1,19 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
+
+const ZoneContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const QuizzContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+  margin-left: 3vw;
+  width: 40%;
+`;
 
 export default function Questionaire() {
   const [YouAre, setYouAre] = useState();
@@ -13,8 +28,8 @@ export default function Questionaire() {
   };
 
   return (
-    <div>
-      <div>
+    <ZoneContainer>
+      <QuizzContainer>
         <h2>Comment pouvons-nous vous aider ?</h2>
         <p>
           Pour vous présenter l&apos;offre Forope adaptée à vos besoins, on a
@@ -139,9 +154,9 @@ export default function Questionaire() {
             <button type="button">Découvrir</button>
           </div>
         )}
-      </div>
+      </QuizzContainer>
 
-      <div>il y aura une image</div>
-    </div>
+      <img src="" alt="illustration du sujet" />
+    </ZoneContainer>
   );
 }
