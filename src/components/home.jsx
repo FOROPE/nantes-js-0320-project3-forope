@@ -2,8 +2,7 @@ import React from 'react';
 import Navigation from './navigation';
 import BandeauTitre from './bandeauTitre';
 import Questionaire from './questionaire';
-import Article from './article';
-import Footer from './footer';
+import AllArticles from './allArticles';
 
 export default function Home() {
   return (
@@ -11,8 +10,7 @@ export default function Home() {
       <Navigation />
       <BandeauTitre />
       <Questionaire />
-      <Article />
-      <Footer />
+      <AllArticles />
     </div>
   );
 }
