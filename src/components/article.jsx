@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import arrow from './img/arrow.png';
 
 const ContainerArticle = styled.div`
-  background-color: #64aaa1;
+  background-color: ${(props) => props.theme.lightGreen};
   width: 35vh;
   margin-left: 3vh;
   padding: 2vh 6vh 4vh 6vh;
