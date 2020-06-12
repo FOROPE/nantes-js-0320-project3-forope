@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import bandeau from './img/bandeauHome.png';
 
 const ContainerBandeau = styled.div`
   display: flex;
@@ -7,6 +8,10 @@ const ContainerBandeau = styled.div`
   height: 50vh;
   align-items: center;
   justify-content: center;
+  background-image: url(${bandeau});
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: right -10vw bottom -30px;
 `;
 
 const TitlesBandeau = styled.div`
