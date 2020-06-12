@@ -1,18 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import circle from './img/circle.png';
+import { Flex } from '../mainStyle';
 
-const ContainerFooter = styled.div`
+const ContainerFooter = styled(Flex)`
   background-color: #087e6e;
   width: 100%;
-  display: flex;
+  margin-top: 3vh;
+  font-size: 1rem;
 `;
 
 const ListItem = styled.ul`
   list-style: none;
   text-align: left;
   color: white;
-  flex-direction: row;
 `;
 
 const ListLogo = styled.li`
@@ -20,10 +21,9 @@ const ListLogo = styled.li`
 `;
 
 const ContainerLogo = styled.ul`
-  margin-right: 70vh;
+  margin-right: 35%;
   list-style: none;
   text-align: left;
-  flex-direction: row;
 `;
 
 const Item = styled.li`
@@ -37,7 +37,7 @@ const Logo = styled.img`
 
 export default function Footer() {
   return (
-    <ContainerFooter>
+    <ContainerFooter row>
       <ContainerLogo>
         <Logo src="" alt="logo forope" />
         <ListLogo>
