@@ -1,9 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Flex } from '../mainStyle';
 
 const ContainerTestimony = styled(Flex)`
-  background-color: ${(props) => props.theme.orange};
+  background-color: ${(props) =>
+    props.orange ? props.theme.orange : props.theme.lightGreen};
   margin-left: 3vh;
   padding: 2vh 0 0 2vh;
   width: 37vh;
@@ -28,15 +30,15 @@ const MainText = styled.p`
   margin-left: 2vh;
 `;
 
-export default function Testimony() {
+export default function Testimony({ orange, name }) {
   return (
-    <ContainerTestimony row>
+    <ContainerTestimony row orange={orange}>
       <UserImg
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Tramway_de_Qu%C3%A9bec_%281897%29_-_Cercle_blanc.svg/1200px-Tramway_de_Qu%C3%A9bec_%281897%29_-_Cercle_blanc.svg.png"
         alt="coucou"
       />
       <UserText col>
-        <TitleText>Jean Denis, 20 ans, RH chez pfizer</TitleText>
+        <TitleText>{name}, 20 ans, RH chez pfizer</TitleText>
         <MainText>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
           minus, delectus ad illum aliquam iste. Delectus adipisci ut ratione!
@@ -48,3 +50,8 @@ export default function Testimony() {
     </ContainerTestimony>
   );
 }
+
+Testimony.propTypes = {
+  orange: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+};

@@ -9,10 +9,10 @@ const ContainerTestimonies = styled(Flex)`
 export default function AllTestimonies() {
   return (
     <ContainerTestimonies row>
-      <Testimony />
-      <Testimony />
-      <Testimony />
-      <Testimony />
+      <Testimony name="John Doe" orange />
+      <Testimony name="Pascal Gentil" />
+      <Testimony name="François Damiens" orange />
+      <Testimony name="Juste Leblanc" />
     </ContainerTestimonies>
   );
 }
