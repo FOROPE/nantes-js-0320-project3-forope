@@ -5,6 +5,7 @@ import Questionaire from './questionaire';
 import AllArticles from './allArticles';
 import Footer from './footer';
 import AllTestimonies from './allTemoignages';
+import Clients from './clients';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <BandeauTitre />
       <Questionaire />
       <AllArticles />
+      <Clients />
       <Footer />
       <AllTestimonies />
     </>
