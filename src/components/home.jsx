@@ -13,8 +13,8 @@ export default function Home() {
       <BandeauTitre />
       <Questionaire />
       <AllArticles />
-      <Footer />
       <AllTestimonies />
+      <Footer />
     </>
   );
 }
