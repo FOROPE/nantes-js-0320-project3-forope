@@ -6,31 +6,31 @@ import { Flex } from '../mainStyle';
 const ContainerTestimony = styled(Flex)`
   background-color: ${(props) =>
     props.orange ? props.theme.orange : props.theme.lightGreen};
-  margin-left: 3vh;
-  padding: 2vh 0 0 2vh;
+  margin-left: 2rem;
+  padding: 1rem 0 0 1rem;
   width: 37vh;
   height: 30vh;
   text-align: left;
 `;
 const UserImg = styled.img`
-  height: 23%;
+  height: 7vh;
 `;
 const UserText = styled(Flex)`
   color: white;
-  margin-right: 5vh;
+  margin-right: 2rem;
 `;
 const TitleText = styled.h3`
-  margin-left: 2vh;
+  margin-left: 1rem;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 0.9rem;
   width: 80%;
 `;
 const MainText = styled.p`
-  font-size: 12px;
-  margin-left: 2vh;
+  font-size: 0.75rem;
+  margin-left: 1rem;
 `;
 
-export default function Testimony({ orange, name }) {
+export default function Testimony({ orange, name, content }) {
   return (
     <ContainerTestimony row orange={orange}>
       <UserImg
@@ -38,14 +38,8 @@ export default function Testimony({ orange, name }) {
         alt="coucou"
       />
       <UserText col>
-        <TitleText>{name}, 20 ans, RH chez pfizer</TitleText>
-        <MainText>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
-          minus, delectus ad illum aliquam iste. Delectus adipisci ut ratione!
-          Harum dolorem inventore qui? Quibusdam accusantium illo quisquam quod
-          eveniet rem?Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Libero minus, delectus ad illum aliquam iste.
-        </MainText>
+        <TitleText>{name}</TitleText>
+        <MainText>{content}</MainText>
       </UserText>
     </ContainerTestimony>
   );
@@ -54,4 +48,5 @@ export default function Testimony({ orange, name }) {
 Testimony.propTypes = {
   orange: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
 };
