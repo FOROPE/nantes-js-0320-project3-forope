@@ -4,8 +4,8 @@ import circlegrey from './img/circlegrey.png';
 
 const ContainerContent = styled.div`
   text-align: left;
-  width: 80%;
-  margin-left: 3vw;
+  width: 165vh;
+  margin-left: 2rem;
   color: ${(props) => props.theme.grey};
 `;
 
@@ -19,19 +19,19 @@ const Dot = styled.span`
 `;
 
 const TextContent = styled.p`
-  margin-left: 3vw;
+  margin-left: 2rem;
 `;
 
 const ContainerShare = styled.div`
   text-align: right;
-  margin-right: 3vw;
+  margin-right: 2rem;
   color: ${(props) => props.theme.orange};
-  margin-right: 12vw;
+  margin-right: 12rem;
 `;
 
 const Logo = styled.img`
-  width: 34px;
-  margin-left: 0.8vh;
+  width: 4.5vh;
+  margin-left: 0.4rem;
 `;
 
 export default function Content() {
