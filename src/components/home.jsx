@@ -4,15 +4,17 @@ import BandeauTitre from './bandeauTitre';
 import Questionaire from './questionaire';
 import AllArticles from './allArticles';
 import Footer from './footer';
+import AllTestimonies from './allTemoignages';
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Navigation />
       <BandeauTitre />
       <Questionaire />
       <AllArticles />
       <Footer />
-    </div>
+      <AllTestimonies />
+    </>
   );
 }
