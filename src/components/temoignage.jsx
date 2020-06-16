@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Flex } from '../mainStyle';
+import { Flex, TextContent } from '../mainStyle';
 
 const ContainerTestimony = styled(Flex)`
   background-color: ${(props) =>
@@ -25,10 +25,7 @@ const TitleText = styled.h3`
   font-size: 14px;
   width: 80%;
 `;
-const MainText = styled.p`
-  font-size: 12px;
-  margin-left: 2vh;
-`;
+const MainText = styled(TextContent)``;
 
 export default function Testimony({ orange, name }) {
   return (
