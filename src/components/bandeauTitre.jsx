@@ -1,19 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import { ContainerBandeau, Flex } from '../mainStyle';
 
-const ContainerBandeau = styled.div`
-  display: flex;
-  border: 2px solid black;
-  height: 50vh;
-  align-items: center;
+const TitlesBandeau = styled(Flex)`
   justify-content: center;
-`;
-
-const TitlesBandeau = styled.div`
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 `;
 
 const SubtitleBandeau = styled.p`
@@ -30,8 +21,8 @@ const TitleBandeau = styled.h1`
 `;
 export default function BandeauTitre() {
   return (
-    <ContainerBandeau>
-      <TitlesBandeau>
+    <ContainerBandeau center>
+      <TitlesBandeau col>
         <TitleBandeau>Forope.</TitleBandeau>
         <SubtitleBandeau>
           Lorem ipsum dolor sit amet, consecteconsecte- tuer adipiscing elit,
