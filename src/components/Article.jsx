@@ -5,8 +5,8 @@ import arrow from './img/arrow.png';
 
 const ContainerArticle = styled.div`
   background-color: ${(props) => props.theme.lightGreen};
-  width: 35vh;
-  margin-left: 2rem;
+  width: 20vw;
+  /* margin-left: 2rem; */
   padding: 0.5rem 3rem 2rem 3rem;
   text-align: left;
 `;
