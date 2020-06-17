@@ -5,7 +5,6 @@ import Questionaire from './Quizz';
 import AllArticles from './AllArticles';
 import Footer from './Footer';
 import AllTestimonies from './AllTestimonies';
-import Form from './Formulaire';
 
 export default function Home() {
   return (
@@ -18,7 +17,6 @@ export default function Home() {
       <Questionaire />
       <AllArticles />
       <AllTestimonies />
-      <Form />
       <Footer />
     </>
   );
