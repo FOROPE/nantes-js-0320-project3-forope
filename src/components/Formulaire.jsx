@@ -39,7 +39,9 @@ const AllInputs = styled(Flex)`
   margin-right: 10vh;
 `;
 
-const OneInput = styled(InputForm)``;
+const OneInput = styled(InputForm)`
+  box-sizing: border-box;
+`;
 
 const SelectForm = styled.select`
   width: 100%;
