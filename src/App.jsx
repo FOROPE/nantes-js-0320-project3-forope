@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
+import { ThemeProvider } from 'styled-components';
+import theme from './theme';
+import Home from './components/Home';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">Hello React World</header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Home />
+    </ThemeProvider>
   );
 }
 
