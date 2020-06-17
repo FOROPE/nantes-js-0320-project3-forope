@@ -40,3 +40,7 @@ export const TitleH2 = styled.h2`
   padding-left: 4rem;
   color: ${(props) => props.theme.mediumGreen};
 `;
+
+export const Punctuation = styled.span`
+  color: ${(props) => props.theme.orange};
+`;

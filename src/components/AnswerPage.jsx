@@ -5,6 +5,7 @@ import Form from './Formulaire';
 import AllArticles from './AllArticles';
 import Footer from './Footer';
 import Content from './Content';
+import Titles from './Titles';
 
 export default function AnswerPage() {
   return (
@@ -14,8 +15,11 @@ export default function AnswerPage() {
         title="Forope."
         subtitle="Lorem ipsum dolor sit amet, consecteconsecte- tuer adipiscing elit."
       />
+      <Titles text="Contenu" signs="." />
       <Content />
+      <Titles align text="Nous contacter" signs="." />
       <Form />
+      <Titles text="En +" signs="." />
       <AllArticles />
       <Footer />
     </>

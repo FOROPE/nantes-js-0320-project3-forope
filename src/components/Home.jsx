@@ -17,9 +17,9 @@ export default function Home() {
       <Banner logo={LogoFull} />
       <Questionaire />
       <AllArticles />
-      <Titles text="Ils nous ont fait confiance !" />
+      <Titles text="Ils nous ont fait confiance " signs="!" />
       <Clients />
-      <Titles align text="Témoignages." />
+      <Titles align text="Témoignages" signs="." />
       <AllTestimonies />
       <Footer logo={logowhite} />
     </>
