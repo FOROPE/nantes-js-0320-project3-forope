@@ -14,11 +14,11 @@ const NavList = styled.ul`
 const NavItem = styled.li`
   list-style: none;
   padding: 0px;
-  margin-right: 3vw;
+  margin-right: 3rem;
 `;
 
 const Logo = styled.img`
-  margin-left: 3vw;
+  margin-left: 3rem;
 `;
 
 export default function Navigation() {

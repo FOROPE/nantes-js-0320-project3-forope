@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ContainerBandeau = styled.div`
+export const ContainerBanner = styled.div`
   display: flex;
   border: 2px solid black;
   height: 50vh;
