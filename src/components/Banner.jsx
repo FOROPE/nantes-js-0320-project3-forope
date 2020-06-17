@@ -6,7 +6,6 @@ import Camion from './img/camion2.png';
 
 const TitlesBanner = styled(Flex)`
   justify-content: center;
-
   align-items: center;
   position: absolute;
 `;
@@ -33,10 +32,16 @@ const BackgroundBanner = styled.img`
   z-index: -1000;
 `;
 
-export default function Banner({ title, subtitle }) {
+const LogoHome = styled.img`
+  padding-top: 10rem;
+  height: 150px;
+`;
+
+export default function Banner({ title, subtitle, logo }) {
   return (
     <ContainerBanner center>
       <TitlesBanner col>
+        <LogoHome src={logo} alt="" />
         <TitleBanner>{title}</TitleBanner>
         <SubtitleBanner>{subtitle}</SubtitleBanner>
       </TitlesBanner>
@@ -48,4 +53,5 @@ export default function Banner({ title, subtitle }) {
 Banner.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
+  logo: PropTypes.string.isRequired,
 };
