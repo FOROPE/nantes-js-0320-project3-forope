@@ -6,7 +6,7 @@ import { Flex } from '../mainStyle';
 const ContainerFooter = styled(Flex)`
   background-color: #087e6e;
   width: 100%;
-  margin-top: 3vh;
+  margin-top: 1.5rem;
   font-size: 1rem;
 `;
 
@@ -17,22 +17,22 @@ const ListItem = styled.ul`
 `;
 
 const ListLogo = styled.li`
-  padding-top: 1vh;
+  padding-top: 0.5rem;
 `;
 
 const ContainerLogo = styled.ul`
-  margin-right: 35%;
+  margin-right: 40rem;
   list-style: none;
   text-align: left;
 `;
 
 const Item = styled.li`
-  padding-top: 1vh;
+  padding-top: 0.5rem;
 `;
 
 const Logo = styled.img`
-  width: 34px;
-  margin-right: 1vh;
+  width: 2rem;
+  margin-right: 0.5rem;
 `;
 
 export default function Footer() {
@@ -41,10 +41,10 @@ export default function Footer() {
       <ContainerLogo>
         <Logo src="" alt="logo forope" />
         <ListLogo>
-          <Logo src={circle} alt="logo réseaux sociaux" />
-          <Logo src={circle} alt="logo réseaux sociaux" />
-          <Logo src={circle} alt="logo réseaux sociaux" />
-          <Logo src={circle} alt="logo réseaux sociaux" />
+          <Logo src={circle} alt="logo social network" />
+          <Logo src={circle} alt="logo social network" />
+          <Logo src={circle} alt="logo social network" />
+          <Logo src={circle} alt="logo social network" />
         </ListLogo>
       </ContainerLogo>
 

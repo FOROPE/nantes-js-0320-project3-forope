@@ -11,7 +11,7 @@ const QuizzContainer = styled.div`
   flex-direction: column;
 
   text-align: left;
-  margin-left: 3vw;
+  margin-left: 3rem;
   width: 40%;
 `;
 
@@ -23,7 +23,7 @@ export default function Questionaire() {
     setYouAre(event.target.value);
   };
 
-  const handleChange2 = (event) => {
+  const handleChangeManager = (event) => {
     setYouWant(event.target.value);
   };
 
@@ -58,11 +58,11 @@ export default function Questionaire() {
               <select
                 name="personas"
                 id="persona-selection"
-                onChange={handleChange2}
+                onChange={handleChangeManager}
               >
                 <option value="">--Please choose an option--</option>
-                <option value="excellence-oppérationnelle">
-                  Excellence oppérationnelle
+                <option value="excellence-opérationelle">
+                  Excellence opérationelle
                 </option>
               </select>
             </label>
@@ -76,7 +76,7 @@ export default function Questionaire() {
               <select
                 name="personas"
                 id="persona-selection"
-                onChange={handleChange2}
+                onChange={handleChangeManager}
               >
                 <option value="">--Please choose an option--</option>
                 <option value="gpec">
@@ -106,7 +106,7 @@ export default function Questionaire() {
               <select
                 name="personas"
                 id="persona-selection"
-                onChange={handleChange2}
+                onChange={handleChangeManager}
               >
                 <option value="">--Please choose an option--</option>
                 <option value="former-experts">
@@ -135,7 +135,7 @@ export default function Questionaire() {
               <select
                 name="personas"
                 id="persona-selection"
-                onChange={handleChange2}
+                onChange={handleChangeManager}
               >
                 <option value="">--Please choose an option--</option>
                 <option value="formation-cpf">Formation CPF</option>
