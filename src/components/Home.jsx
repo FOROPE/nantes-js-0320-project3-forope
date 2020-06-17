@@ -7,6 +7,7 @@ import Footer from './Footer';
 import AllTestimonies from './AllTestimonies';
 import Clients from './Clients';
 import LogoFull from './img/Logo_full.svg';
+import logowhite from './img/logowhite.jpg';
 import Titles from './Titles';
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
       <Clients />
       <Titles align text="Témoignages." />
       <AllTestimonies />
-      <Footer />
+      <Footer logo={logowhite} />
     </>
   );
 }
