@@ -6,7 +6,7 @@ import Camion from './img/camion2.png';
 
 const TitlesBanner = styled(Flex)`
   justify-content: center;
-  height: 100%;
+
   align-items: center;
   position: absolute;
 `;
@@ -25,7 +25,9 @@ const TitleBanner = styled.h1`
 `;
 
 const BackgroundBanner = styled.img`
-  height: 100%;
+  height: 600px;
+  object-fit: cover;
+  box-sizing: border-box;
   position: relative;
   right: -30rem;
   z-index: -1000;

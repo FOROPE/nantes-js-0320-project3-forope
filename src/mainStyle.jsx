@@ -6,6 +6,8 @@ export const ContainerBanner = styled.div`
   height: 50vh;
   align-items: ${(props) => props.center && 'center'};
   justify-content: ${(props) => props.center && 'center'};
+  box-sizing: content-box;
+  overflow: hidden;
 `;
 
 export const Flex = styled.div`
