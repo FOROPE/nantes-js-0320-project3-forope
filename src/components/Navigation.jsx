@@ -5,6 +5,8 @@ const ContainerNav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  width: 100%;
 `;
 
 const NavList = styled.ul`
@@ -23,16 +25,14 @@ const Logo = styled.img`
 
 export default function Navigation() {
   return (
-    <>
-      <ContainerNav>
-        <Logo src="#" alt="logo" />
-        <NavList>
-          <NavItem>Entreprise</NavItem>
-          <NavItem>Particulier</NavItem>
-          <NavItem>Presse</NavItem>
-          <NavItem>Forope</NavItem>
-        </NavList>
-      </ContainerNav>
-    </>
+    <ContainerNav>
+      <Logo src="#" alt="logo" />
+      <NavList>
+        <NavItem>Entreprise</NavItem>
+        <NavItem>Particulier</NavItem>
+        <NavItem>Presse</NavItem>
+        <NavItem>Forope</NavItem>
+      </NavList>
+    </ContainerNav>
   );
 }
