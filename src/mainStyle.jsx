@@ -15,6 +15,7 @@ export const Flex = styled.div`
   display: flex;
   flex-direction: ${(props) => (props.col ? 'column' : 'row')};
   justify-content: ${(props) => props.end && 'flex-end'};
+  justify-content: ${(props) => props.btw && 'space-between'};
 `;
 
 export const TextContent = styled.p`
@@ -36,7 +37,8 @@ export const InputForm = styled.input`
 
 export const TitleH2 = styled.h2`
   font-size: 2.5rem;
-  width: 20%;
-  padding-left: 4rem;
+  width: ${(props) => (props.quizz ? '60%' : '20%')};
+  padding-left: ${(props) => (props.quizz ? '0' : '4rem')};
   color: ${(props) => props.theme.mediumGreen};
+  margin: ${(props) => props.quizz && '0'};
 `;
