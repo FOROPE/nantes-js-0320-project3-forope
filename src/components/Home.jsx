@@ -7,6 +7,7 @@ import Footer from './Footer';
 import AllTestimonies from './AllTestimonies';
 import Clients from './Clients';
 import LogoFull from './img/Logo_full.svg';
+import Titles from './Titles';
 
 export default function Home() {
   return (
@@ -15,7 +16,9 @@ export default function Home() {
       <Banner logo={LogoFull} />
       <Questionaire />
       <AllArticles />
+      <Titles text="Ils nous ont fait confiance !" />
       <Clients />
+      <Titles align text="Témoignages." />
       <AllTestimonies />
       <Footer />
     </>

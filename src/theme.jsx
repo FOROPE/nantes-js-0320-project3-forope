@@ -28,6 +28,7 @@ const mediaMin = Object.keys(sizes).reduce((acc, label) => {
 
 export default {
   darkGreen: '#043C34',
+  mediumGreen: '#097e6e',
   lightGreen: '#64AAA1',
   orange: '#EC7D06',
   lightOrange: '#F4A406',

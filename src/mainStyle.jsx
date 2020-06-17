@@ -6,6 +6,7 @@ export const ContainerBanner = styled.div`
   height: 50vh;
   align-items: ${(props) => props.center && 'center'};
   justify-content: ${(props) => props.center && 'center'};
+
   box-sizing: content-box;
   overflow: hidden;
 `;
@@ -13,6 +14,7 @@ export const ContainerBanner = styled.div`
 export const Flex = styled.div`
   display: flex;
   flex-direction: ${(props) => (props.col ? 'column' : 'row')};
+  justify-content: ${(props) => props.end && 'flex-end'};
 `;
 
 export const TextContent = styled.p`
@@ -30,4 +32,11 @@ export const InputForm = styled.input`
   &::-webkit-input-placeholder {
     color: white;
   }
+`;
+
+export const TitleH2 = styled.h2`
+  font-size: 2.5rem;
+  width: 20%;
+  padding-left: 4rem;
+  color: ${(props) => props.theme.mediumGreen};
 `;
