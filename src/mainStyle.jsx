@@ -42,3 +42,20 @@ export const TitleH2 = styled.h2`
   color: ${(props) => props.theme.mediumGreen};
   margin: ${(props) => props.quizz && '0'};
 `;
+
+export const Button = styled.button`
+  color: white;
+  border: 1px solid ${(props) => (props.quizz ? props.theme.orange : 'white')};
+  border-radius: 30px;
+  background-color: ${(props) =>
+    props.quizz ? props.theme.orange : 'transparent'};
+  padding: 0.5rem;
+  width: 20%
+  font-size: 0.9rem;
+`;
+
+export const LogoArrow = styled.img`
+  width: 2vh;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+`;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-
+import Btn from './Button';
 import { TitleH2, Flex } from '../mainStyle';
 
 const ZoneContainer = styled(Flex)`
@@ -178,7 +178,7 @@ export default function Questionaire() {
               Viens découvrir tout ce qu’on faire, on est des super champions de
               la formation de formateurs.
             </ContentQuizz>
-            <button type="button">Découvrir</button>
+            <Btn quizz seeMore="Découvrir" />
           </div>
         )}
       </QuizzContainer>
