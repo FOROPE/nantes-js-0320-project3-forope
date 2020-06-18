@@ -1,18 +1,40 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import Btn from './Button';
+import { TitleH2, Flex } from '../mainStyle';
 
-const ZoneContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
+const ZoneContainer = styled(Flex)`
+  width: 80%;
+  margin: auto;
 `;
 
-const QuizzContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-
+const QuizzContainer = styled(Flex)`
   text-align: left;
   margin-left: 3rem;
   width: 40%;
+`;
+
+const Label = styled.label`
+  margin-bottom: 1rem;
+
+  .persona-selection {
+    border: none;
+    background: none;
+    border-bottom: 2px solid ${(props) => props.theme.orange};
+    outline: 0;
+    padding-bottom: 0.2rem;
+    color: ${(props) => props.theme.orange};
+  }
+`;
+
+const QuoteQuizz = styled.p`
+  font-size: 1.5em;
+  margin-bottom: 0;
+`;
+
+const ContentQuizz = styled.p`
+  margin-top: 0.3em;
+  width: 70%;
 `;
 
 export default function Questionaire() {
@@ -28,19 +50,20 @@ export default function Questionaire() {
   };
 
   return (
-    <ZoneContainer>
-      <QuizzContainer>
-        <h2>Comment pouvons-nous vous aider ?</h2>
+    <ZoneContainer btw>
+      <QuizzContainer col>
+        <TitleH2 quizz>Comment pouvons-nous vous aider ?</TitleH2>
         <p>
           Pour vous présenter l&apos;offre Forope adaptée à vos besoins, on a
           besoin d&apos;en savoir un tout petit peu plus !
         </p>
-        <label htmlFor="persona-selection">
+        <Label htmlFor="persona-selection">
           Vous êtes :
           <select
             type="select"
             name="personas"
             id="persona-selection"
+            className="persona-selection"
             onChange={handleChange}
           >
             <option value="">--Please choose an option--</option>
@@ -49,15 +72,16 @@ export default function Questionaire() {
             <option value="operations">Opérations</option>
             <option value="particulier">Particulier</option>
           </select>
-        </label>
+        </Label>
 
         {YouAre === 'dirigeant' && (
           <>
-            <label htmlFor="secondchoice">
+            <Label htmlFor="secondchoice">
               Vous voulez :
               <select
                 name="personas"
-                id="persona-selection"
+                id="secondchoice"
+                className="persona-selection"
                 onChange={handleChangeManager}
               >
                 <option value="">--Please choose an option--</option>
@@ -65,17 +89,18 @@ export default function Questionaire() {
                   Excellence opérationelle
                 </option>
               </select>
-            </label>
+            </Label>
           </>
         )}
 
         {YouAre === 'rh' && (
           <>
-            <label htmlFor="secondchoice">
+            <Label htmlFor="secondchoice">
               Vous voulez :
               <select
                 name="personas"
                 id="persona-selection"
+                className="persona-selection"
                 onChange={handleChangeManager}
               >
                 <option value="">--Please choose an option--</option>
@@ -95,17 +120,18 @@ export default function Questionaire() {
                   Former aux nouveaux métiers
                 </option>
               </select>
-            </label>
+            </Label>
           </>
         )}
 
         {YouAre === 'operations' && (
           <>
-            <label htmlFor="secondchoice">
+            <Label htmlFor="secondchoice">
               Vous voulez :
               <select
                 name="personas"
                 id="persona-selection"
+                className="persona-selection"
                 onChange={handleChangeManager}
               >
                 <option value="">--Please choose an option--</option>
@@ -124,34 +150,35 @@ export default function Questionaire() {
                 </option>
                 <option value="habilitations">Habilitations</option>
               </select>
-            </label>
+            </Label>
           </>
         )}
 
         {YouAre === 'particulier' && (
           <>
-            <label htmlFor="secondchoice">
+            <Label htmlFor="secondchoice">
               Vous voulez :
               <select
                 name="personas"
                 id="persona-selection"
+                className="persona-selection"
                 onChange={handleChangeManager}
               >
                 <option value="">--Please choose an option--</option>
                 <option value="formation-cpf">Formation CPF</option>
               </select>
-            </label>
+            </Label>
           </>
         )}
 
         {YouWant && (
           <div>
-            <p>Super, nous pouvons vous aider !</p>
-            <p>
+            <QuoteQuizz>Super, nous pouvons vous aider !</QuoteQuizz>
+            <ContentQuizz>
               Viens découvrir tout ce qu’on faire, on est des super champions de
               la formation de formateurs.
-            </p>
-            <button type="button">Découvrir</button>
+            </ContentQuizz>
+            <Btn quizz seeMore="Découvrir" />
           </div>
         )}
       </QuizzContainer>

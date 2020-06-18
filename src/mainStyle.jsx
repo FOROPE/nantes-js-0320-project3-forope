@@ -15,6 +15,7 @@ export const Flex = styled.div`
   display: flex;
   flex-direction: ${(props) => (props.col ? 'column' : 'row')};
   justify-content: ${(props) => props.end && 'flex-end'};
+  justify-content: ${(props) => props.btw && 'space-between'};
 `;
 
 export const TextContent = styled.p`
@@ -36,7 +37,25 @@ export const InputForm = styled.input`
 
 export const TitleH2 = styled.h2`
   font-size: 2.5rem;
-  width: 20%;
-  padding-left: 4rem;
+  width: ${(props) => (props.quizz ? '60%' : '20%')};
+  padding-left: ${(props) => (props.quizz ? '0' : '4rem')};
   color: ${(props) => props.theme.mediumGreen};
+  margin: ${(props) => props.quizz && '0'};
+`;
+
+export const Button = styled.button`
+  color: white;
+  border: 1px solid ${(props) => (props.quizz ? props.theme.orange : 'white')};
+  border-radius: 30px;
+  background-color: ${(props) =>
+    props.quizz ? props.theme.orange : 'transparent'};
+  padding: 0.5rem;
+  width: 20%
+  font-size: 0.9rem;
+`;
+
+export const LogoArrow = styled.img`
+  width: 2vh;
+  margin-left: 0.5rem;
+  vertical-align: middle;
 `;
