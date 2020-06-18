@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Btn from './Button';
-import { TitleH2, Flex } from '../mainStyle';
+import { TitleH2, Flex, Punctuation } from '../mainStyle';
+import Persos from './img/persos_quizz.svg';
 
 const ZoneContainer = styled(Flex)`
   width: 80%;
@@ -37,6 +38,12 @@ const ContentQuizz = styled.p`
   width: 70%;
 `;
 
+const QuizzIllustration = styled.img`
+  height: 400px;
+  margin-top: 2rem;
+  margin-right: 4rem;
+`;
+
 export default function Questionaire() {
   const [YouAre, setYouAre] = useState();
   const [YouWant, setYouWant] = useState();
@@ -52,7 +59,9 @@ export default function Questionaire() {
   return (
     <ZoneContainer btw>
       <QuizzContainer col>
-        <TitleH2 quizz>Comment pouvons-nous vous aider ?</TitleH2>
+        <TitleH2 quizz>
+          Comment pouvons-nous vous aider <Punctuation>?</Punctuation>
+        </TitleH2>
         <p>
           Pour vous présenter l&apos;offre Forope adaptée à vos besoins, on a
           besoin d&apos;en savoir un tout petit peu plus !
@@ -183,7 +192,7 @@ export default function Questionaire() {
         )}
       </QuizzContainer>
 
-      <img src="" alt="illustration du sujet" />
+      <QuizzIllustration src={Persos} alt="illustration du sujet" />
     </ZoneContainer>
   );
 }
