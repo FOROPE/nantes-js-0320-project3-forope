@@ -59,3 +59,7 @@ export const LogoArrow = styled.img`
   margin-left: 0.5rem;
   vertical-align: middle;
 `;
+
+export const Punctuation = styled.span`
+  color: ${(props) => props.theme.orange};
+`;

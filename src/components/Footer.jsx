@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import circle from './img/circle.png';
 import { Flex } from '../mainStyle';
@@ -34,21 +35,25 @@ const Item = styled.li`
   padding-top: 0.5rem;
 `;
 
-const Logo = styled.img`
+const CompanyLogo = styled.img`
+  width: 8rem;
+`;
+
+const LogoItem = styled.img`
   width: 2rem;
   margin-right: 0.5rem;
 `;
 
-export default function Footer() {
+export default function Footer({ logo }) {
   return (
     <ContainerFooter row>
       <ContainerLogo>
-        <Logo src="" alt="logo forope" />
+        <CompanyLogo src={logo} alt="" />
         <ListLogo>
-          <Logo src={circle} alt="logo social network" />
-          <Logo src={circle} alt="logo social network" />
-          <Logo src={circle} alt="logo social network" />
-          <Logo src={circle} alt="logo social network" />
+          <LogoItem src={circle} alt="logo social network" />
+          <LogoItem src={circle} alt="logo social network" />
+          <LogoItem src={circle} alt="logo social network" />
+          <LogoItem src={circle} alt="logo social network" />
         </ListLogo>
       </ContainerLogo>
       <ListLink>
@@ -78,3 +83,7 @@ export default function Footer() {
     </ContainerFooter>
   );
 }
+
+Footer.propTypes = {
+  logo: PropTypes.string.isRequired,
+};

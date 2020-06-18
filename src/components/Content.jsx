@@ -9,15 +9,6 @@ const ContainerContent = styled.div`
   color: ${(props) => props.theme.grey};
 `;
 
-const Title = styled.h2`
-  color: ${(props) => props.theme.lightGreen};
-  font-size: 3rem;
-`;
-
-const Dot = styled.span`
-  color: ${(props) => props.theme.orange};
-`;
-
 const TextContent = styled.p`
   margin-left: 2rem;
 `;
@@ -38,9 +29,6 @@ export default function Content() {
   return (
     <>
       <ContainerContent>
-        <Title>
-          Contenu<Dot>.</Dot>
-        </Title>
         <TextContent>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
