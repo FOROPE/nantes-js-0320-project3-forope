@@ -49,10 +49,13 @@ export const TitleH3 = styled.h3`
   width: 50px;
   height: 50px;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: normal;
   color: ${(props) => props.theme.mediumGreen};
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const TitleH4 = styled.h4`

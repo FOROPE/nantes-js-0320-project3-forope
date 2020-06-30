@@ -7,6 +7,7 @@ const ContainerAllSteps = styled(Flex)`
   justify-content: space-evenly;
   width: 80%;
   margin: auto;
+  flex-wrap: wrap;
 `;
 
 export default function AllSteps() {

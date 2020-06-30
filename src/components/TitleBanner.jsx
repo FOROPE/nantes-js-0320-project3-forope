@@ -10,6 +10,19 @@ const TitlesBanner = styled(Flex)`
   position: absolute;
 `;
 
+const SubtitleBanner = styled.p`
+  width: 40%;
+  text-align: left;
+  align-self: flex-end;
+  margin: 0;
+`;
+
+const TitleBanner = styled.h1`
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+`;
+
 const BackgroundBanner = styled.img`
   height: 160%;
   object-fit: cover;
@@ -19,21 +32,19 @@ const BackgroundBanner = styled.img`
   z-index: -1000;
 `;
 
-const LogoHome = styled.img`
-  height: 150px;
-`;
-
-export default function Banner({ logo }) {
+export default function BannerTitle({ title, subtitle }) {
   return (
     <ContainerBanner center>
       <TitlesBanner col>
-        <LogoHome src={logo} alt="Forope logo" />
+        <TitleBanner>{title}</TitleBanner>
+        <SubtitleBanner>{subtitle}</SubtitleBanner>
       </TitlesBanner>
       <BackgroundBanner src={truck} alt="bg" />
     </ContainerBanner>
   );
 }
 
-Banner.propTypes = {
-  logo: PropTypes.string.isRequired,
+BannerTitle.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
 };
