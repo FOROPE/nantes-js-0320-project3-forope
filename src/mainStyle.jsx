@@ -20,6 +20,7 @@ export const Flex = styled.div`
 
 export const TextContent = styled.p`
   font-size: 12px;
+  text-align: ${(props) => props.center && 'center'};
 `;
 
 export const InputForm = styled.input`
@@ -40,6 +41,23 @@ export const TitleH2 = styled.h2`
   padding-left: ${(props) => (props.quizz ? '0' : '4rem')};
   color: ${(props) => props.theme.mediumGreen};
   margin: ${(props) => props.quizz && '0'};
+`;
+
+export const TitleH3 = styled.h3`
+  border-radius: 50%;
+  border: 2px solid ${(props) => props.theme.mediumGreen};
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: ${(props) => props.theme.mediumGreen};
+  margin: 0;
+`;
+
+export const TitleH4 = styled.h4`
+  margin: 0.5rem;
+  color: ${(props) => props.theme.mediumGreen};
 `;
 
 export const Button = styled.button`
