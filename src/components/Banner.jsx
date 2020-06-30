@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { ContainerBanner, Flex } from '../mainStyle';
-import Camion from './img/camion2.png';
+import truck from './img/truck2.png';
 
 const TitlesBanner = styled(Flex)`
   justify-content: center;
@@ -24,7 +24,7 @@ const TitleBanner = styled.h1`
 `;
 
 const BackgroundBanner = styled.img`
-  height: 600px;
+  height: 160%;
   object-fit: cover;
   box-sizing: border-box;
   position: relative;
@@ -41,11 +41,11 @@ export default function Banner({ title, subtitle, logo }) {
   return (
     <ContainerBanner center>
       <TitlesBanner col>
-        <LogoHome src={logo} alt="" />
+        <LogoHome src={logo} alt="Forope logo" />
         <TitleBanner>{title}</TitleBanner>
         <SubtitleBanner>{subtitle}</SubtitleBanner>
       </TitlesBanner>
-      <BackgroundBanner src={Camion} alt="bg" />
+      <BackgroundBanner src={truck} alt="bg" />
     </ContainerBanner>
   );
 }

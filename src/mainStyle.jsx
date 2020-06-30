@@ -20,7 +20,6 @@ export const Flex = styled.div`
 
 export const TextContent = styled.p`
   font-size: 12px;
-  margin-left: 2vh;
 `;
 
 export const InputForm = styled.input`
@@ -50,7 +49,6 @@ export const Button = styled.button`
   background-color: ${(props) =>
     props.quizz ? props.theme.orange : 'transparent'};
   padding: 0.5rem;
-  width: 20%
   font-size: 0.9rem;
 `;
 
