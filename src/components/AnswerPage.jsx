@@ -6,6 +6,7 @@ import AllArticles from './AllArticles';
 import Footer from './Footer';
 import Content from './Content';
 import Titles from './Titles';
+import Context from './Context';
 
 export default function AnswerPage() {
   return (
@@ -17,6 +18,7 @@ export default function AnswerPage() {
       />
       <Titles text="Contenu" signs="." />
       <Content />
+      <Context />
       <Titles align text="Nous contacter" signs="." />
       <Form />
       <Titles text="En +" signs="." />
