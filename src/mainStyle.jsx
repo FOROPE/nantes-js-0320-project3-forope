@@ -65,7 +65,7 @@ export const TitleH4 = styled.h4`
 export const Button = styled.button`
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: baseline;
   color: white;
   border: 1px solid ${(props) => (props.quizz ? props.theme.orange : 'white')};
   border-radius: 30px;
