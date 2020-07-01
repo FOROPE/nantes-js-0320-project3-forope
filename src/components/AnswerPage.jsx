@@ -5,6 +5,7 @@ import Form from './Formulaire';
 import AllArticles from './AllArticles';
 import Footer from './Footer';
 import Titles from './Titles';
+import Referencing from './Referencing';
 import AllSteps from './AllSteps';
 
 export default function AnswerPage() {
@@ -21,6 +22,8 @@ export default function AnswerPage() {
       <Form />
       <Titles text="En +" signs="." />
       <AllArticles />
+      <Titles align text="Référencement" signs="." />
+      <Referencing />
       <Footer />
     </>
   );
