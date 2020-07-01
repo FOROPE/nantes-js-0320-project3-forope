@@ -7,7 +7,8 @@ import Emoji from './Emoji';
 const Container = styled(Flex)`
   background-color: #ededed;
   width: 50%;
-  padding: 1rem;
+  padding: 2rem;
+  margin: auto;
 `;
 
 const ColumnOne = styled.div`
