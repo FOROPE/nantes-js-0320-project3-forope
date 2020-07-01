@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import { Flex } from '../mainStyle';
 
 const ClientContainer = styled(Flex)`
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin: 3rem 0;
   justify-content: center;
 `;
 
@@ -17,13 +16,11 @@ const ClientText = styled.div`
 const Logos = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
   align-content: flex-start;
 `;
 
 const Logo = styled.img`
-  padding-right: 1rem;
-  padding-bottom: 1rem;
+  padding: 0 1rem 1rem 0;
   height: 80px;
 `;
 

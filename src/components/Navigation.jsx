@@ -24,7 +24,7 @@ const NavItem = styled.li`
 
 const LogoNav = styled.img`
   margin-left: 3rem;
-  width: 40px;
+  width: 2.5%;
 `;
 
 export default function Navigation() {
