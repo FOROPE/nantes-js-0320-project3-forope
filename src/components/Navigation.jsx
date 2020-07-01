@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from './img/Logo.svg';
+import { Punctuation } from '../mainStyle';
 
 const ContainerNav = styled.nav`
   display: flex;
@@ -33,7 +34,9 @@ export default function Navigation() {
       <NavList>
         <NavItem>Entreprise</NavItem>
         <NavItem>Particulier</NavItem>
-        <NavItem>Presse</NavItem>
+        <NavItem>
+          <Punctuation>Pourquoi nous ?</Punctuation>
+        </NavItem>
         <NavItem>Forope</NavItem>
       </NavList>
     </ContainerNav>
