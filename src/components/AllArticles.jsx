@@ -6,6 +6,7 @@ import { Flex } from '../mainStyle';
 const ContainerArticle = styled(Flex)`
   margin-top: 2rem;
   justify-content: space-around;
+  flex-wrap: wrap;
 `;
 
 export default function AllArticles() {

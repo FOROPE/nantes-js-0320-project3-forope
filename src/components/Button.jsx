@@ -1,7 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button, LogoArrow, LinkButton } from '../mainStyle';
-import arrow from './img/arrow.png';
+import styled from 'styled-components';
+import { Button, LinkButton } from '../mainStyle';
+
+const IconArrow = styled.i`
+  padding-left: 0.5rem;
+`;
 
 export default function Btn({ seeMore, quizz, link }) {
   return (
@@ -9,7 +13,7 @@ export default function Btn({ seeMore, quizz, link }) {
       <LinkButton to={link}>
         {' '}
         {seeMore}
-        <LogoArrow src={arrow} alt="Next" />
+        <IconArrow className="fas fa-chevron-circle-right" />
       </LinkButton>
     </Button>
   );

@@ -65,16 +65,15 @@ export const TitleH4 = styled.h4`
 
 export const Button = styled.button`
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   color: white;
-  width: 30%;
   border: 1px solid ${(props) => (props.quizz ? props.theme.orange : 'white')};
   border-radius: 30px;
   background-color: ${(props) =>
     props.quizz ? props.theme.orange : 'transparent'};
   padding: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 `;
 
 export const LogoArrow = styled.img`
