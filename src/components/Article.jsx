@@ -5,8 +5,7 @@ import arrow from './img/arrow.png';
 
 const ContainerArticle = styled.div`
   background-color: ${(props) => props.theme.lightGreen};
-  width: 20vw;
-  /* margin-left: 2rem; */
+  width: 20%;
   padding: 0.5rem 3rem 2rem 3rem;
   text-align: left;
 `;
@@ -32,7 +31,7 @@ const Button = styled.button`
 `;
 
 const LogoArrow = styled.img`
-  width: 2vh;
+  width: 3%;
   margin-left: 0.5rem;
   vertical-align: middle;
 `;

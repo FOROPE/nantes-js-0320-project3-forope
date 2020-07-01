@@ -1,6 +1,11 @@
 import React from 'react';
+import styled from 'styled-components';
 
-import { Flex, TitleH2, Content } from '../mainStyle';
+import { Flex, TitleH2, Content, Punctuation, Italic } from '../mainStyle';
+
+const PartTitle = styled.h3`
+  color: ${(props) => props.theme.mediumGreen};
+`;
 
 export default function Context() {
   return (
@@ -9,28 +14,32 @@ export default function Context() {
       <Content>
         <Flex col>
           <Flex col>
-            <h2>La transmission des savoir-faire : un défi concret !</h2>
+            <PartTitle>
+              La transmission des savoir-faire : un défi concret !
+            </PartTitle>
             <p>
               Pour répondre aux besoins de leurs clients, 200.000 entreprises du
-              BTP vont devoir anticiper les départs à la retraite des
+              BTP vont devoir{' '}
+              <Punctuation>anticiper les départs à la retraite </Punctuation>des
               collaborateurs en structurant le transfert des compétences et
-              former efficacement les nouveaux embauchés
+              <Punctuation>former efficacement </Punctuation>les nouveaux
+              embauchés
             </p>
           </Flex>
           <Flex col>
-            <p>
+            <Italic>
               “La moitié des nouveaux entrants n’ont jamais travaillé dans le
               BTP”
-            </p>
-            <p>
+            </Italic>
+            <Italic>
               “¼ des ouvriers du bâtiment seront à la retraite d’ici 10 ans”
-            </p>
-            <p>Observatoire des métiers du BTP, 2018</p>
+            </Italic>
+            <Italic>Observatoire des métiers du BTP, 2018</Italic>
           </Flex>
         </Flex>
         <Flex col>
           <Flex col>
-            <h2>Un financement ?</h2>
+            <PartTitle>Un financement ?</PartTitle>
             <p>
               L’état Français, accompagne les entreprises qui souhaitent
               maintenir leur niveau d’excellence et mise sur l’AFEST (Action de
@@ -41,12 +50,13 @@ export default function Context() {
             </p>
           </Flex>
           <Flex col>
-            <h2>L’action Forope</h2>
+            <PartTitle>L’action Forope</PartTitle>
             <p>
               - Développer rapidement et efficacement la transmission des
-              savoir-faire - Vous rendre autonome en 1 semaine et structurer vos
-              formations chantier - On axe votre plan de formation sur la
-              formation métier car c’est votre besoin
+              savoir-faire - Vous rendre autonome en{' '}
+              <Punctuation>1 semaine </Punctuation>et structurer vos formations
+              chantier - On axe votre plan de formation sur la formation métier
+              car c’est votre besoin
             </p>
           </Flex>
         </Flex>

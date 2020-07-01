@@ -5,14 +5,14 @@ import { Flex, TextContent, InputForm } from '../mainStyle';
 const FormContainer = styled(Flex)`
   margin: auto;
   width: 50%;
-  padding: 2vh 6vh 2vh 6vh;
+  padding: 1rem 4rem 1rem 4rem;
   background-color: ${(props) => props.theme.orange};
   color: white;
 `;
 
 const TitlesFormContainer = styled(Flex)`
   align-items: start;
-  width: 30%;
+  width: 50%;
 `;
 
 const TitleForm = styled.h3`
@@ -29,31 +29,26 @@ const MainText = styled(TextContent)`
 `;
 
 const InputsContainer = styled(Flex)`
-  width: 90%;
-  margin-right: 8vh;
+  width: 100%;
+  margin-right: 4rem;
+  justify-content: space-between;
 `;
 
 const AllInputs = styled(Flex)`
   width: 40%;
   justify-content: flex-start;
-  margin-right: 10vh;
 `;
 
 const OneInput = styled(InputForm)`
   box-sizing: border-box;
 `;
 
-const SelectForm = styled.select`
-  width: 100%;
-  padding: 1vh;
-`;
-
 const ButtonForm = styled.button`
-  width: 50%;
-  padding: 1vh;
+  max-width: 6rem;
+  padding: 0.5rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3vh;
+  margin-top: 1rem;
   text-transform: uppercase;
   background-color: white;
   border-style: double;
@@ -76,16 +71,10 @@ export default function Form() {
             <OneInput type="text" name="lastname" placeholder="Nom" />
             <OneInput type="text" name="companby" placeholder="Entreprise" />
             <OneInput type="email" name="email" placeholder="Email" />
-            <SelectForm name="motif" placeholder="Motif">
-              <option value="Motif">Motif</option>
-              <option value="informations">Informations au sujet de...</option>
-              <option value="tarif">A propos des tarifs</option>
-            </SelectForm>
             <ButtonForm type="button">Etre rappelé</ButtonForm>
           </AllInputs>
           <AllInputs col>
             <OneInput type="text" name="firstname" placeholder="Prénom" />
-            <OneInput type="text" name="function" placeholder="Fonction" />
             <OneInput type="tel" name="phone" placeholder="Téléphone" />
           </AllInputs>
         </InputsContainer>

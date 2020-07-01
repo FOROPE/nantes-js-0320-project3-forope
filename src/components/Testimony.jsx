@@ -7,10 +7,8 @@ const ContainerTestimony = styled(Flex)`
   background-color: ${(props) =>
     props.orange ? props.theme.orange : props.theme.lightGreen};
   text-align: left;
-  /* flex-basis: 15%; */
-  min-height: 23vh;
   color: white;
-  padding: 1%;
+  padding: 1rem;
   width: 20rem;
 `;
 
@@ -18,16 +16,16 @@ const ContainerTop = styled(Flex)`
   align-items: center;
 `;
 const UserImg = styled.img`
-  height: 3vw;
+  height: 2.6rem;
 `;
 const TitleText = styled.h3`
   font-weight: normal;
   font-size: 0.9rem;
-  padding-left: 5%;
+  padding-left: 1rem;
 `;
 const MainText = styled.p`
   font-size: 0.75rem;
-  margin-left: 25%;
+  margin-left: 5rem;
 `;
 
 export default function Testimony({ orange, name, content }) {
@@ -36,7 +34,7 @@ export default function Testimony({ orange, name, content }) {
       <ContainerTop>
         <UserImg
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Tramway_de_Qu%C3%A9bec_%281897%29_-_Cercle_blanc.svg/1200px-Tramway_de_Qu%C3%A9bec_%281897%29_-_Cercle_blanc.svg.png"
-          alt="coucou"
+          alt="placeholder avatar user"
         />
         <TitleText>{name}</TitleText>
       </ContainerTop>
