@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const ContainerBanner = styled.div`
   display: flex;
-  /* border: 2px solid black; */
   height: 50vh;
   align-items: ${(props) => props.center && 'center'};
   justify-content: ${(props) => props.center && 'center'};
@@ -25,8 +24,8 @@ export const TextContent = styled.p`
 
 export const InputForm = styled.input`
   width: 100%;
-  padding: 1vh;
-  margin-bottom: 2vh;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
   background: ${(props) => props.theme.orange};
   border-color: white;
   border-style: double;
@@ -64,7 +63,11 @@ export const TitleH4 = styled.h4`
 `;
 
 export const Button = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
+  width: 30%;
   border: 1px solid ${(props) => (props.quizz ? props.theme.orange : 'white')};
   border-radius: 30px;
   background-color: ${(props) =>
@@ -74,7 +77,7 @@ export const Button = styled.button`
 `;
 
 export const LogoArrow = styled.img`
-  width: 2vh;
+  width: 10%;
   margin-left: 0.5rem;
   vertical-align: middle;
 `;

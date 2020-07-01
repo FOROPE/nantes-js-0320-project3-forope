@@ -15,7 +15,7 @@ const BackgroundBanner = styled.img`
   object-fit: cover;
   box-sizing: border-box;
   position: relative;
-  right: -30rem;
+  left: 30rem;
   z-index: -1000;
 `;
 

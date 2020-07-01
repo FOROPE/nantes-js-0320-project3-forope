@@ -7,7 +7,6 @@ const ContainerTestimony = styled(Flex)`
   background-color: ${(props) =>
     props.orange ? props.theme.orange : props.theme.lightGreen};
   text-align: left;
-  min-height: 23vh;
   color: white;
   padding: 1rem;
   width: 20rem;

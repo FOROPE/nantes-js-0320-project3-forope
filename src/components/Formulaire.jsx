@@ -48,7 +48,7 @@ const ButtonForm = styled.button`
   padding: 0.5rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3vh;
+  margin-top: 1rem;
   text-transform: uppercase;
   background-color: white;
   border-style: double;
