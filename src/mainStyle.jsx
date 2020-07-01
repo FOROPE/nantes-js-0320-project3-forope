@@ -68,3 +68,7 @@ export const Content = styled.div`
   display: flex;
   margin: 0 10rem 0 10rem;
 `;
+
+export const Italic = styled.p`
+  font-style: italic;
+`;
