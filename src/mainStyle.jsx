@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const ContainerBanner = styled.div`
   display: flex;
@@ -93,4 +94,9 @@ export const Content = styled.div`
 
 export const Italic = styled.p`
   font-style: italic;
+`;
+
+export const LinkButton = styled(Link)`
+  text-decoration: none;
+  color: white;
 `;
