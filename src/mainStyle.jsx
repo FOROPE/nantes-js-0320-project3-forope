@@ -37,9 +37,8 @@ export const InputForm = styled.input`
 export const TitleH2 = styled.h2`
   font-size: 2.5rem;
   width: ${(props) => (props.quizz ? '60%' : '20%')};
-  padding-left: ${(props) => (props.quizz ? '0' : '4rem')};
   color: ${(props) => props.theme.mediumGreen};
-  margin: ${(props) => props.quizz && '0'};
+  margin: ${(props) => (props.quizz ? '0' : '3rem 6rem')};
 `;
 
 export const TitleH3 = styled.h3`
@@ -71,7 +70,7 @@ export const Button = styled.button`
   border-radius: 30px;
   background-color: ${(props) =>
     props.quizz ? props.theme.orange : 'transparent'};
-  padding: 0.5rem;
+  padding: 0.7em 1rem;
   font-size: 0.8rem;
 `;
 
@@ -92,4 +91,8 @@ export const Content = styled.div`
 
 export const Italic = styled.p`
   font-style: italic;
+`;
+
+export const Subtitle = styled.p`
+  font-size: 14px;
 `;

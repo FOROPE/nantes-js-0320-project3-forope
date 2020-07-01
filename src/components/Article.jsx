@@ -5,18 +5,19 @@ import Btn from './Button';
 
 const ContainerArticle = styled.div`
   background-color: ${(props) => props.theme.lightGreen};
-  width: 20%;
-  padding: 0.5rem 3rem 2rem 3rem;
+  width: 25%;
+  padding: 2rem;
   text-align: left;
 `;
 
 const ArticleTitle = styled.h3`
   color: white;
+  font-size: 24px;
 `;
 
 const ArticleText = styled.p`
   color: white;
-  font-size: 0.75rem;
+  font-size: 14px;
   margin-bottom: 7rem;
 `;
 

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Flex } from '../mainStyle';
 
 const ClientContainer = styled(Flex)`
-  margin: 3rem 0;
+  margin: 1rem 9rem;
   justify-content: center;
 `;
 
@@ -11,6 +11,7 @@ const ClientText = styled.div`
   width: 30%;
   padding-right: 10rem;
   text-align: left;
+  font-size: 14px;
 `;
 
 const Logos = styled.div`
