@@ -1,10 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+import Logo from './img/Logo.svg';
+import { Punctuation } from '../mainStyle';
 
 const ContainerNav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  width: 100%;
+  padding-top: 1rem;
 `;
 
 const NavList = styled.ul`
@@ -17,22 +22,23 @@ const NavItem = styled.li`
   margin-right: 3rem;
 `;
 
-const Logo = styled.img`
+const LogoNav = styled.img`
   margin-left: 3rem;
+  width: 2.5%;
 `;
 
 export default function Navigation() {
   return (
-    <>
-      <ContainerNav>
-        <Logo src="#" alt="logo" />
-        <NavList>
-          <NavItem>Entreprise</NavItem>
-          <NavItem>Particulier</NavItem>
-          <NavItem>Presse</NavItem>
-          <NavItem>Forope</NavItem>
-        </NavList>
-      </ContainerNav>
-    </>
+    <ContainerNav>
+      <LogoNav src={Logo} alt="logo" />
+      <NavList>
+        <NavItem>Entreprise</NavItem>
+        <NavItem>Particulier</NavItem>
+        <NavItem>
+          <Punctuation>Pourquoi nous ?</Punctuation>
+        </NavItem>
+        <NavItem>Forope</NavItem>
+      </NavList>
+    </ContainerNav>
   );
 }

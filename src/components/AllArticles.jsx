@@ -5,7 +5,7 @@ import { Flex } from '../mainStyle';
 
 const ContainerArticle = styled(Flex)`
   margin-top: 2rem;
-  justify-content: center;
+  justify-content: space-around;
 `;
 
 export default function AllArticles() {
