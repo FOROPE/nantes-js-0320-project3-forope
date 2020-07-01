@@ -4,7 +4,7 @@ import circlegrey from './img/circlegrey.png';
 
 const ContainerContent = styled.div`
   text-align: left;
-  width: 165vh;
+  width: 85%;
   margin-left: 2rem;
   color: ${(props) => props.theme.grey};
 `;
@@ -21,7 +21,7 @@ const ContainerShare = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 4.5vh;
+  width: 2.5%;
   margin-left: 0.4rem;
 `;
 

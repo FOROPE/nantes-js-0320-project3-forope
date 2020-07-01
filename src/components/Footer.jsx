@@ -36,7 +36,7 @@ const Item = styled.li`
 `;
 
 const CompanyLogo = styled.img`
-  width: 8rem;
+  width: 18%;
 `;
 
 const LogoItem = styled.img`
