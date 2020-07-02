@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const ContainerBanner = styled.div`
   display: flex;
@@ -104,4 +105,9 @@ export const Subtitle = styled.p`
 export const LinkPage = styled.a`
   color: ${(props) => (props.button ? 'white' : 'black')};
   text-decoration: none;
+`;
+
+export const LinkButton = styled(Link)`
+  text-decoration: none;
+  color: white;
 `;
