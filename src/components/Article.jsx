@@ -17,7 +17,7 @@ const ArticleTitle = styled.h3`
 
 const ArticleText = styled.p`
   color: white;
-  font-size: 14px;
+  font-size: 19px;
   margin-bottom: 7rem;
 `;
 

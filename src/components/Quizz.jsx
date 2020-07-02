@@ -17,7 +17,7 @@ const QuizzContainer = styled(Flex)`
 
 const Label = styled.label`
   margin-bottom: 1rem;
-  font-size: 14px;
+  font-size: 19px;
 
   .persona-selection {
     border: none;
@@ -37,12 +37,16 @@ const QuoteQuizz = styled.p`
 const ContentQuizz = styled.p`
   margin-top: 0.3em;
   width: 70%;
-  font-size: 14px;
+  font-size: 19px;
 `;
 
 const QuizzIllustration = styled.img`
   height: 400px;
   margin-right: 4rem;
+`;
+
+const SelectItem = styled.select`
+  font-size: 19px;
 `;
 
 export default function Questionaire() {
@@ -69,7 +73,7 @@ export default function Questionaire() {
         </Subtitle>
         <Label htmlFor="persona-selection">
           Vous êtes :
-          <select
+          <SelectItem
             type="select"
             name="personas"
             id="persona-selection"
@@ -81,14 +85,14 @@ export default function Questionaire() {
             <option value="rh">RH/Formation</option>
             <option value="operations">Opérations</option>
             <option value="particulier">Particulier</option>
-          </select>
+          </SelectItem>
         </Label>
 
         {YouAre === 'dirigeant' && (
           <>
             <Label htmlFor="secondchoice">
               Vous voulez :
-              <select
+              <SelectItem
                 name="personas"
                 id="secondchoice"
                 className="persona-selection"
@@ -98,7 +102,7 @@ export default function Questionaire() {
                 <option value="excellence-opérationelle">
                   Excellence opérationelle
                 </option>
-              </select>
+              </SelectItem>
             </Label>
           </>
         )}
@@ -107,7 +111,7 @@ export default function Questionaire() {
           <>
             <Label htmlFor="secondchoice">
               Vous voulez :
-              <select
+              <SelectItem
                 name="personas"
                 id="persona-selection"
                 className="persona-selection"
@@ -129,7 +133,7 @@ export default function Questionaire() {
                 <option value="nouveaux-metiers">
                   Former aux nouveaux métiers
                 </option>
-              </select>
+              </SelectItem>
             </Label>
           </>
         )}
@@ -138,7 +142,7 @@ export default function Questionaire() {
           <>
             <Label htmlFor="secondchoice">
               Vous voulez :
-              <select
+              <SelectItem
                 name="personas"
                 id="persona-selection"
                 className="persona-selection"
@@ -159,7 +163,7 @@ export default function Questionaire() {
                   Développer les compétences en management
                 </option>
                 <option value="habilitations">Habilitations</option>
-              </select>
+              </SelectItem>
             </Label>
           </>
         )}
@@ -168,7 +172,7 @@ export default function Questionaire() {
           <>
             <Label htmlFor="secondchoice">
               Vous voulez :
-              <select
+              <SelectItem
                 name="personas"
                 id="persona-selection"
                 className="persona-selection"
@@ -176,7 +180,7 @@ export default function Questionaire() {
               >
                 <option value="">--Please choose an option--</option>
                 <option value="formation-cpf">Formation CPF</option>
-              </select>
+              </SelectItem>
             </Label>
           </>
         )}

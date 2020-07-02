@@ -71,7 +71,7 @@ export const Button = styled.button`
   background-color: ${(props) =>
     props.quizz ? props.theme.orange : 'transparent'};
   padding: 0.7em 1rem;
-  font-size: 0.8rem;
+  font-size: 14px;
 `;
 
 export const LogoArrow = styled.img`
@@ -94,5 +94,5 @@ export const Italic = styled.p`
 `;
 
 export const Subtitle = styled.p`
-  font-size: 14px;
+  font-size: 19px;
 `;

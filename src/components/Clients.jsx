@@ -11,7 +11,7 @@ const ClientText = styled.div`
   width: 30%;
   padding-right: 10rem;
   text-align: left;
-  font-size: 14px;
+  font-size: 19px;
 `;
 
 const Logos = styled.div`
