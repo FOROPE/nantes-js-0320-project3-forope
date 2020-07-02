@@ -20,6 +20,7 @@ const NavItem = styled.li`
   list-style: none;
   padding: 0px;
   margin-right: 3rem;
+  font-size: 19px;
 `;
 
 const LogoNav = styled.img`
