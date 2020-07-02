@@ -5,7 +5,7 @@ import { TitleH3, Flex, TextContent, TitleH4 } from '../mainStyle';
 
 const ContainerStep = styled(Flex)`
   align-items: center;
-  width: 15rem;
+  width: 25%;
 `;
 
 export default function Step({ numberStep, title, body }) {

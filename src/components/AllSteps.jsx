@@ -6,7 +6,7 @@ import { Flex } from '../mainStyle';
 const ContainerAllSteps = styled(Flex)`
   justify-content: space-evenly;
   width: 80%;
-  margin: auto;
+  margin: 0 9rem;
   flex-wrap: wrap;
 `;
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from './img/Logo.svg';
-import { Punctuation } from '../mainStyle';
+import { Punctuation, LinkPage } from '../mainStyle';
 
 const ContainerNav = styled.nav`
   display: flex;
@@ -14,6 +14,7 @@ const ContainerNav = styled.nav`
 
 const NavList = styled.ul`
   display: flex;
+  align-items: center;
 `;
 
 const NavItem = styled.li`
@@ -21,6 +22,12 @@ const NavItem = styled.li`
   padding: 0px;
   margin-right: 3rem;
   font-size: 19px;
+`;
+
+const NavButton = styled(NavItem)`
+  border-radius: 50px;
+  padding: 0.4rem 1rem;
+  background: ${(props) => props.theme.mediumGreen};
 `;
 
 const LogoNav = styled.img`
@@ -38,7 +45,11 @@ export default function Navigation() {
         <NavItem>
           <Punctuation>Pourquoi nous ?</Punctuation>
         </NavItem>
-        <NavItem>Forope</NavItem>
+        <NavButton>
+          <LinkPage button href="/#" src="contact">
+            Contact
+          </LinkPage>
+        </NavButton>
       </NavList>
     </ContainerNav>
   );

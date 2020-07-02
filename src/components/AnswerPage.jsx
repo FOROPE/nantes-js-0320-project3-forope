@@ -14,8 +14,9 @@ export default function AnswerPage() {
     <>
       <Navigation />
       <BannerTitle
-        title="Forope."
-        subtitle="Lorem ipsum dolor sit amet, consecteconsecte- tuer adipiscing elit."
+        theme="Dirigeant"
+        title="L'organisme de formation qui structure la transmission des savoir-faire dans votre entreprise."
+        subtitle='Avec Forop, on valorise les bonnes pratiques en interne et on structure le contenu des formations sur le "travail bien fait"'
       />
       <Context />
       <Titles text="Comment ça fonctionne" signs=" !" />

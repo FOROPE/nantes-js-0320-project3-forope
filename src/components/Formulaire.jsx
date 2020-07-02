@@ -16,7 +16,7 @@ const TitlesFormContainer = styled(Flex)`
 `;
 
 const TitleForm = styled.h3`
-  font-size: 1.5em;
+  font-size: 24px;
   font-weight: normal;
   margin-bottom: 0;
   text-transform: uppercase;
