@@ -3,14 +3,15 @@ import styled from 'styled-components';
 import Article from './Article';
 import { Flex } from '../mainStyle';
 
-const ContainerArticle = styled(Flex)`
-  margin-top: 2rem;
-  justify-content: space-around;
+const ContainerAllArticles = styled(Flex)`
+  margin: 0 3rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
 `;
 
 export default function AllArticles() {
   return (
-    <ContainerArticle>
+    <ContainerAllArticles>
       <Article
         title="Première actu."
         content="Viens découvrir tout ce qu’on faire, on est des super champions de la
@@ -29,6 +30,6 @@ export default function AllArticles() {
         formation de formateurs."
         seeMore="En savoir plus"
       />
-    </ContainerArticle>
+    </ContainerAllArticles>
   );
 }

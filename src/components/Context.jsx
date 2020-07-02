@@ -1,16 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
-
-import { Flex, TitleH2, Content, Punctuation, Italic } from '../mainStyle';
+import { Flex, Content, Punctuation, Italic } from '../mainStyle';
 
 const PartTitle = styled.h3`
   color: ${(props) => props.theme.mediumGreen};
 `;
 
+const TtileContext = styled.h2`
+  font-size: 28px;
+  color: ${(props) => props.theme.mediumGreen};
+  margin: 3rem 6rem;
+`;
+
 export default function Context() {
   return (
     <>
-      <TitleH2>La transmission des savoir-faire : un défi concret !</TitleH2>
+      <TtileContext>
+        La transmission des savoir-faire : un défi concret !
+      </TtileContext>
       <Content>
         <Flex col>
           <Flex col>

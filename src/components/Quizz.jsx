@@ -1,22 +1,23 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Btn from './Button';
-import { TitleH2, Flex, Punctuation } from '../mainStyle';
+import { TitleH2, Flex, Punctuation, Subtitle } from '../mainStyle';
 import Persos from './img/persos_quizz.svg';
 
 const ZoneContainer = styled(Flex)`
   width: 80%;
-  margin: auto;
+  margin: 0 9rem 2rem 9rem;
+  padding-top: 2rem;
 `;
 
 const QuizzContainer = styled(Flex)`
   text-align: left;
-  margin-left: 3rem;
   width: 40%;
 `;
 
 const Label = styled.label`
   margin-bottom: 1rem;
+  font-size: 19px;
 
   .persona-selection {
     border: none;
@@ -36,14 +37,17 @@ const QuoteQuizz = styled.p`
 const ContentQuizz = styled.p`
   margin-top: 0.3em;
   width: 70%;
+  font-size: 19px;
 `;
 
 const QuizzIllustration = styled.img`
   height: 400px;
-  margin-top: 2rem;
   margin-right: 4rem;
 `;
 
+const SelectItem = styled.select`
+  font-size: 19px;
+`;
 export default function Questionaire() {
   const [YouAre, setYouAre] = useState();
   const [YouWant, setYouWant] = useState();
@@ -62,13 +66,13 @@ export default function Questionaire() {
         <TitleH2 quizz>
           Comment pouvons-nous vous aider <Punctuation>?</Punctuation>
         </TitleH2>
-        <p>
+        <Subtitle>
           Pour vous présenter l&apos;offre Forope adaptée à vos besoins, on a
           besoin d&apos;en savoir un tout petit peu plus !
-        </p>
+        </Subtitle>
         <Label htmlFor="persona-selection">
           Vous êtes :
-          <select
+          <SelectItem
             type="select"
             name="personas"
             id="persona-selection"
@@ -80,14 +84,14 @@ export default function Questionaire() {
             <option value="rh">RH/Formation</option>
             <option value="operations">Opérations</option>
             <option value="particulier">Particulier</option>
-          </select>
+          </SelectItem>
         </Label>
 
         {YouAre === 'dirigeant' && (
           <>
             <Label htmlFor="secondchoice">
               Vous voulez :
-              <select
+              <SelectItem
                 name="personas"
                 id="secondchoice"
                 className="persona-selection"
@@ -97,7 +101,7 @@ export default function Questionaire() {
                 <option value="excellence-opérationelle">
                   Excellence opérationelle
                 </option>
-              </select>
+              </SelectItem>
             </Label>
           </>
         )}
@@ -106,7 +110,7 @@ export default function Questionaire() {
           <>
             <Label htmlFor="secondchoice">
               Vous voulez :
-              <select
+              <SelectItem
                 name="personas"
                 id="persona-selection"
                 className="persona-selection"
@@ -128,7 +132,7 @@ export default function Questionaire() {
                 <option value="nouveaux-metiers">
                   Former aux nouveaux métiers
                 </option>
-              </select>
+              </SelectItem>
             </Label>
           </>
         )}
@@ -137,7 +141,7 @@ export default function Questionaire() {
           <>
             <Label htmlFor="secondchoice">
               Vous voulez :
-              <select
+              <SelectItem
                 name="personas"
                 id="persona-selection"
                 className="persona-selection"
@@ -158,7 +162,7 @@ export default function Questionaire() {
                   Développer les compétences en management
                 </option>
                 <option value="habilitations">Habilitations</option>
-              </select>
+              </SelectItem>
             </Label>
           </>
         )}
@@ -167,7 +171,7 @@ export default function Questionaire() {
           <>
             <Label htmlFor="secondchoice">
               Vous voulez :
-              <select
+              <SelectItem
                 name="personas"
                 id="persona-selection"
                 className="persona-selection"
@@ -175,7 +179,7 @@ export default function Questionaire() {
               >
                 <option value="">--Please choose an option--</option>
                 <option value="formation-cpf">Formation CPF</option>
-              </select>
+              </SelectItem>
             </Label>
           </>
         )}

@@ -17,7 +17,6 @@ export default function AnswerPage() {
         title="Forope."
         subtitle="Lorem ipsum dolor sit amet, consecteconsecte- tuer adipiscing elit."
       />
-      <Titles text="Contenu" signs="." />
       <Context />
       <Titles text="Comment ça fonctionne" signs=" !" />
       <AllSteps />

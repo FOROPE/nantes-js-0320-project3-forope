@@ -6,6 +6,7 @@ import { Flex } from '../mainStyle';
 const ContainerTestimonies = styled(Flex)`
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin: 0 3rem;
 `;
 export default function AllTestimonies() {
   return (

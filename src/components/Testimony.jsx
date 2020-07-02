@@ -20,11 +20,11 @@ const UserImg = styled.img`
 `;
 const TitleText = styled.h3`
   font-weight: normal;
-  font-size: 0.9rem;
+  font-size: 19px;
   padding-left: 1rem;
 `;
 const MainText = styled.p`
-  font-size: 0.75rem;
+  font-size: 14px;
   margin-left: 5rem;
 `;
 
