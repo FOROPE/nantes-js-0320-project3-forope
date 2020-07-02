@@ -48,7 +48,6 @@ const QuizzIllustration = styled.img`
 const SelectItem = styled.select`
   font-size: 19px;
 `;
-
 export default function Questionaire() {
   const [YouAre, setYouAre] = useState();
   const [YouWant, setYouWant] = useState();

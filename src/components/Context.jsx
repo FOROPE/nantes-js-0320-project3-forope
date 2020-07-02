@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import { Flex, Content, Punctuation, Italic } from '../mainStyle';
 
 const PartTitle = styled.h3`
