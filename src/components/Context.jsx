@@ -34,7 +34,7 @@ export default function Context() {
             </PartTitle>
             <Subtitle>
               Pour répondre aux besoins de leurs clients, 200.000 entreprises du
-              BTP vont devoir{' '}
+              BTP vont devoir
               <Punctuation>anticiper les départs à la retraite </Punctuation>des
               collaborateurs en structurant le transfert des compétences et
               <Punctuation>former efficacement </Punctuation>les nouveaux
@@ -53,27 +53,7 @@ export default function Context() {
           </Flex>
         </ContainerFlex>
         <ContainerFlex col>
-          <Flex col>
-            <PartTitle>Un financement ?</PartTitle>
-            <Subtitle>
-              L’état Français, accompagne les entreprises qui souhaitent
-              maintenir leur niveau d’excellence et mise sur l’AFEST (Action de
-              Formation En Situation de Travail) pour la transmission des
-              savoir-faire. Le 5 septembre 2018, la loi pour “la liberté de
-              choisir son avenir professionnel” définit la formation chantier
-              comme action de formation à part entière.
-            </Subtitle>
-          </Flex>
-          <Flex col>
-            <PartTitle>L’action Forope</PartTitle>
-            <Subtitle>
-              - Développer rapidement et efficacement la transmission des
-              savoir-faire - Vous rendre autonome en{' '}
-              <Punctuation>1 semaine </Punctuation>et structurer vos formations
-              chantier - On axe votre plan de formation sur la formation métier
-              car c’est votre besoin
-            </Subtitle>
-          </Flex>
+          <img src="https://via.placeholder.com/200" alt="illustration" />
         </ContainerFlex>
       </Content>
     </>
