@@ -11,7 +11,6 @@ export default function Btn({ seeMore, quizz }) {
   return (
     <Button quizz={quizz} type="button">
       {seeMore}
-
       <IconArrow className="fas fa-chevron-circle-right" />
     </Button>
   );
