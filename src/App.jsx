@@ -11,7 +11,6 @@ function App() {
       <Router>
         <div>
           <Link to="/" />
-          <Link to="/page2" />
         </div>
         <Switch>
           <Route exact path="/" component={Home} />
