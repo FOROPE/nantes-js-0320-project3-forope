@@ -4,7 +4,7 @@ import Article from './Article';
 import { Flex } from '../mainStyle';
 
 const ContainerAllArticles = styled(Flex)`
-  margin: 0 3rem;
+  margin: 1rem 7rem;
   justify-content: space-between;
   flex-wrap: wrap;
 `;

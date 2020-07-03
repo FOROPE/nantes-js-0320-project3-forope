@@ -8,24 +8,27 @@ const ContainerTestimony = styled(Flex)`
     props.orange ? props.theme.orange : props.theme.lightGreen};
   text-align: left;
   color: white;
-  padding: 1rem;
+  padding: 3rem;
   width: 20rem;
+  margin: 5rem 3rem;
 `;
 
 const ContainerTop = styled(Flex)`
   align-items: center;
 `;
+
 const UserImg = styled.img`
   height: 2.6rem;
 `;
+
 const TitleText = styled.h3`
   font-weight: normal;
   font-size: 19px;
   padding-left: 1rem;
 `;
+
 const MainText = styled.p`
-  font-size: 14px;
-  margin-left: 5rem;
+  font-size: 17px;
 `;
 
 export default function Testimony({ orange, name, content }) {

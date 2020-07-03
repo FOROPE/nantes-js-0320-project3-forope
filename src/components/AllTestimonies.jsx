@@ -37,14 +37,6 @@ export default function AllTestimonies() {
           Libero minus, delectus ad illum aliquam iste."
         orange
       />
-      <Testimony
-        name="Juste Leblanc, 20 ans, RH chez pfizer"
-        content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
-          minus, delectus ad illum aliquam iste. Delectus adipisci ut ratione!
-          Harum dolorem inventore qui? Quibusdam accusantium illo quisquam quod
-          eveniet rem?Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Libero minus, delectus ad illum aliquam iste."
-      />
     </ContainerTestimonies>
   );
 }

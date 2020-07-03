@@ -9,7 +9,7 @@ const ContainerNav = styled.nav`
   align-items: center;
   position: absolute;
   width: 100%;
-  padding-top: 1rem;
+  background: gainsboro;
 `;
 
 const NavList = styled.ul`

@@ -1,12 +1,9 @@
 import styled from 'styled-components';
 
 export const ContainerBanner = styled.div`
-  display: flex;
-  height: 50vh;
   align-items: ${(props) => props.center && 'center'};
   justify-content: ${(props) => props.center && 'center'};
-  justify-content: ${(props) => props.flexstart && 'flex-start'};
-
+  padding: 5rem 2rem;
   box-sizing: content-box;
   overflow: hidden;
 `;
@@ -37,9 +34,10 @@ export const InputForm = styled.input`
 
 export const TitleH2 = styled.h2`
   font-size: 2.5rem;
-  width: ${(props) => (props.quizz ? '60%' : '20%')};
-  color: ${(props) => props.theme.mediumGreen};
-  margin: ${(props) => (props.quizz ? '0' : '3rem 6rem')};
+  width: ${(props) => (props.quizz ? '99%' : '20%')};
+  width: ${(props) => (props.nowidth ? '0%' : '50%')};
+  color: black;
+  margin: ${(props) => (props.quizz ? '0' : '3rem 9rem')};
 `;
 
 export const TitleH3 = styled.h3`
@@ -73,7 +71,7 @@ export const Button = styled.button`
   background-color: ${(props) =>
     props.quizz ? props.theme.orange : 'transparent'};
   padding: 0.7em 1rem;
-  font-size: 14px;
+  font-size: 20px;
 `;
 
 export const LogoArrow = styled.img`
@@ -98,7 +96,9 @@ export const Italic = styled.p`
 `;
 
 export const Subtitle = styled.p`
-  font-size: 19px;
+  font-size: 23px;
+  line-height: 33px;
+  color: black;
 `;
 
 export const LinkPage = styled.a`

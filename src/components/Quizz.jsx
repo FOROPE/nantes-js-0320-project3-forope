@@ -5,14 +5,16 @@ import { TitleH2, Flex, Punctuation, Subtitle } from '../mainStyle';
 import Persos from './img/persos_quizz.svg';
 
 const ZoneContainer = styled(Flex)`
-  width: 80%;
-  margin: 0 9rem 2rem 9rem;
-  padding-top: 2rem;
+  width: 70%;
+  top: 30%;
+  left: 10%;
+  padding-top: 14rem;
 `;
 
-const QuizzContainer = styled(Flex)`
+const QuizzContainer = styled.div`
   text-align: left;
   width: 40%;
+  min-height: 525px;
 `;
 
 const Label = styled.label`
@@ -26,6 +28,7 @@ const Label = styled.label`
     outline: 0;
     padding-bottom: 0.2rem;
     color: ${(props) => props.theme.orange};
+    margin: 0.5rem;
   }
 `;
 
@@ -41,8 +44,8 @@ const ContentQuizz = styled.p`
 `;
 
 const QuizzIllustration = styled.img`
-  height: 400px;
-  margin-right: 4rem;
+  width: 26%;
+  margin-right: 19rem;
 `;
 
 const SelectItem = styled.select`
@@ -64,14 +67,16 @@ export default function Questionaire() {
     <ZoneContainer btw>
       <QuizzContainer col>
         <TitleH2 quizz>
-          Comment pouvons-nous vous aider <Punctuation>?</Punctuation>
+          <Punctuation>Comment </Punctuation>
+          pouvons-nous vous aider
+          <Punctuation> ?</Punctuation>
         </TitleH2>
         <Subtitle>
           Pour vous présenter l&apos;offre Forope adaptée à vos besoins, on a
           besoin d&apos;en savoir un tout petit peu plus !
         </Subtitle>
         <Label htmlFor="persona-selection">
-          Vous êtes :
+          Vous êtes : &nbsp;&nbsp;
           <SelectItem
             type="select"
             name="personas"
