@@ -1,12 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Forope
+
+Forope is a react project from Erwan, Ameline and Alice, all Wild Code School students.
 
 ## Getting started
 
 ```bash
-$ git clone 
+$ git clone
 $ git init && npm install
 $ npm start
 ```
+
+## Package CSS
+
+- styled-components
+  (https://styled-components.com/docs/)
 
 ## Why this template over create-react-app ?
 
