@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
 import styled from 'styled-components';
 import { Flex, TextContent, InputForm } from '../mainStyle';
 
@@ -56,6 +57,28 @@ const ButtonForm = styled.button`
 `;
 
 export default function Form() {
+  const [user, setUser] = useState([]);
+  // eslint-disable-next-line no-unused-vars
+  const [error, setError] = useState();
+  const [Name, setName] = useState('');
+
+  const postUser = async (e) => {
+    e.preventDefault();
+    try {
+      // eslint-disable-next-line no-unused-vars
+      const list = await axios.post(`http://localhost:5000/form`, {
+        Name,
+      });
+      setUser(user.data);
+    } catch (err) {
+      setError(err);
+    }
+  };
+
+  const handleAddName = (e) => {
+    setName(e.target.value);
+  };
+
   return (
     <>
       <FormContainer col>
@@ -68,10 +91,18 @@ export default function Form() {
         </TitlesFormContainer>
         <InputsContainer>
           <AllInputs col>
-            <OneInput type="text" name="lastname" placeholder="Nom" />
+            <OneInput
+              type="text"
+              name="lastname"
+              placeholder="Nom"
+              onChange={handleAddName}
+              value={Name}
+            />
             <OneInput type="text" name="companby" placeholder="Entreprise" />
             <OneInput type="email" name="email" placeholder="Email" />
-            <ButtonForm type="button">Etre rappelé</ButtonForm>
+            <ButtonForm type="button" onClick={postUser}>
+              Etre rappelé
+            </ButtonForm>
           </AllInputs>
           <AllInputs col>
             <OneInput type="text" name="firstname" placeholder="Prénom" />
