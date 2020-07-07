@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import theme from './theme';
 import Home from './components/Home';
 import AnswerPage from './components/AnswerPage';
+import ClientList from './components/ClientList';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/page2" component={AnswerPage} />
+          <Route path="/client" component={ClientList} />
         </Switch>
       </Router>
     </ThemeProvider>
