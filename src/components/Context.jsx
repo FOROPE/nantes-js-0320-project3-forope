@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
 import { Flex, Content, Punctuation, Italic, Subtitle } from '../mainStyle';
+
 
 const PartTitle = styled.h3`
   color: ${(props) => props.theme.mediumGreen};
@@ -18,6 +20,12 @@ const ContainerFlex = styled.div`
   display: flex;
   flex-direction: column;
   width: 45%;
+`;
+
+const TtileContext = styled.h2`
+  font-size: 28px;
+  color: ${(props) => props.theme.mediumGreen};
+  margin: 3rem 6rem;
 `;
 
 export default function Context() {

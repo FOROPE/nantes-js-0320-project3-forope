@@ -102,6 +102,7 @@ export const Subtitle = styled.p`
   font-size: 19px;
 `;
 
+
 export const LinkPage = styled.a`
   color: ${(props) => (props.button ? 'white' : 'black')};
   text-decoration: none;
@@ -111,3 +112,4 @@ export const LinkButton = styled(Link)`
   text-decoration: none;
   color: white;
 `;
+
