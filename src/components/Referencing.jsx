@@ -9,6 +9,7 @@ const Container = styled(Flex)`
   width: 50%;
   padding: 2rem;
   margin: auto;
+  font-size: 19px;
 `;
 
 const ColumnOne = styled.div`

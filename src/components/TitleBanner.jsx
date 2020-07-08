@@ -8,19 +8,28 @@ const TitlesBanner = styled(Flex)`
   justify-content: center;
   align-items: center;
   position: absolute;
-`;
-
-const SubtitleBanner = styled.p`
+  left: 0;
+  margin: 2rem 6rem;
   width: 40%;
-  text-align: left;
-  align-self: flex-end;
-  margin: 0;
 `;
 
 const TitleBanner = styled.h1`
-  font-size: 5rem;
+  font-size: 30px;
   margin-bottom: 1rem;
-  text-decoration: underline;
+  color: ${(props) => props.theme.mediumGreen};
+`;
+
+const SubtitleBanner = styled.p`
+  text-align: left;
+  align-self: flex-start;
+  margin: 0;
+  color: ${(props) => props.theme.orange};
+`;
+
+const TitleTheme = styled.p`
+  color: ${(props) => props.theme.orange};
+  align-self: flex-start;
+  margin: 0;
 `;
 
 const BackgroundBanner = styled.img`
@@ -32,10 +41,11 @@ const BackgroundBanner = styled.img`
   z-index: -1000;
 `;
 
-export default function BannerTitle({ title, subtitle }) {
+export default function BannerTitle({ title, subtitle, theme }) {
   return (
     <ContainerBanner center>
       <TitlesBanner col>
+        <TitleTheme>{theme}</TitleTheme>
         <TitleBanner>{title}</TitleBanner>
         <SubtitleBanner>{subtitle}</SubtitleBanner>
       </TitlesBanner>
@@ -47,4 +57,5 @@ export default function BannerTitle({ title, subtitle }) {
 BannerTitle.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
+  theme: PropTypes.string.isRequired,
 };

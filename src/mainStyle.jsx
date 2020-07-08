@@ -1,10 +1,12 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const ContainerBanner = styled.div`
   display: flex;
   height: 50vh;
   align-items: ${(props) => props.center && 'center'};
   justify-content: ${(props) => props.center && 'center'};
+  justify-content: ${(props) => props.flexstart && 'flex-start'};
 
   box-sizing: content-box;
   overflow: hidden;
@@ -18,7 +20,7 @@ export const Flex = styled.div`
 `;
 
 export const TextContent = styled.p`
-  font-size: 12px;
+  font-size: 19px;
   text-align: ${(props) => props.center && 'center'};
 `;
 
@@ -59,6 +61,7 @@ export const TitleH3 = styled.h3`
 export const TitleH4 = styled.h4`
   margin: 0.5rem;
   color: ${(props) => props.theme.mediumGreen};
+  font-size: 24px;
 `;
 
 export const Button = styled.button`
@@ -86,7 +89,9 @@ export const Punctuation = styled.span`
 
 export const Content = styled.div`
   display: flex;
-  margin: 0 10rem 0 10rem;
+  margin: 0 9rem;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const Italic = styled.p`
@@ -96,3 +101,15 @@ export const Italic = styled.p`
 export const Subtitle = styled.p`
   font-size: 19px;
 `;
+
+
+export const LinkPage = styled.a`
+  color: ${(props) => (props.button ? 'white' : 'black')};
+  text-decoration: none;
+`;
+
+export const LinkButton = styled(Link)`
+  text-decoration: none;
+  color: white;
+`;
+
