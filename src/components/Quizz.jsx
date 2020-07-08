@@ -196,7 +196,7 @@ export default function Questionaire() {
               Viens découvrir tout ce qu’on faire, on est des super champions de
               la formation de formateurs.
             </ContentQuizz>
-            <Btn quizz seeMore="Découvrir" />
+            <Btn quizz seeMore="Découvrir" link="/page2" />
           </div>
         )}
       </QuizzContainer>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const ContainerBanner = styled.div`
   align-items: ${(props) => props.center && 'center'};
@@ -101,7 +102,14 @@ export const Subtitle = styled.p`
   color: black;
 `;
 
+
 export const LinkPage = styled.a`
   color: ${(props) => (props.button ? 'white' : 'black')};
   text-decoration: none;
 `;
+
+export const LinkButton = styled(Link)`
+  text-decoration: none;
+  color: white;
+`;
+
