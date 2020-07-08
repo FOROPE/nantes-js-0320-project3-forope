@@ -25,7 +25,7 @@ const Logo = styled.img`
   height: 80px;
 `;
 
-export default function Clients() {
+export default function Partners() {
   return (
     <ClientContainer>
       <ClientText>
