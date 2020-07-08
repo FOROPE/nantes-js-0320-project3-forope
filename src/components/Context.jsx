@@ -10,7 +10,7 @@ const PartTitle = styled.h3`
   font-size: 24px;
 `;
 
-const TtileContext = styled.h2`
+const TitleContext = styled.h2`
   font-size: 28px;
   color: ${(props) => props.theme.mediumGreen};
   margin: 3rem 6rem;
@@ -22,18 +22,12 @@ const ContainerFlex = styled.div`
   width: 45%;
 `;
 
-const TtileContext = styled.h2`
-  font-size: 28px;
-  color: ${(props) => props.theme.mediumGreen};
-  margin: 3rem 6rem;
-`;
-
 export default function Context() {
   return (
     <>
-      <TtileContext>
+      <TitleContext>
         La transmission des savoir-faire : un défi concret !
-      </TtileContext>
+      </TitleContext>
       <Content>
         <ContainerFlex col>
           <Flex col>
