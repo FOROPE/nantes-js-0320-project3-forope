@@ -1,18 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
 import styled from 'styled-components';
 import { Flex, TextContent, InputForm } from '../mainStyle';
 
-const FormContainer = styled(Flex)`
+const FormContainer = styled.form`
   margin: auto;
   width: 50%;
   padding: 1rem 4rem 1rem 4rem;
   background-color: ${(props) => props.theme.orange};
   color: white;
+  display: flex;
+  flex-direction: column;
 `;
 
-const TitlesFormContainer = styled(Flex)`
+const TitlesFormContainer = styled.div`
   align-items: start;
   width: 50%;
+  display: flex;
+  flex-direction: column;
 `;
 
 const TitleForm = styled.h3`
@@ -43,8 +49,8 @@ const OneInput = styled(InputForm)`
   box-sizing: border-box;
 `;
 
-const ButtonForm = styled.button`
-  max-width: 6rem;
+const ButtonForm = styled.input`
+  max-width: 8rem;
   padding: 0.5rem;
   margin-left: auto;
   margin-right: auto;
@@ -56,10 +62,72 @@ const ButtonForm = styled.button`
 `;
 
 export default function Form() {
+  const send = () => toast.success('Forope vous contactera prochainement.');
+  const errorForm = () => toast('Il y a un problème.');
+
+  const [user, setUser] = useState([]);
+  // eslint-disable-next-line no-unused-vars
+  const [error, setError] = useState();
+  const [Name, setName] = useState('');
+  const [Entreprise, setEntreprise] = useState('');
+  // eslint-disable-next-line camelcase
+  const [Adresse_mail, setAdresse_mail] = useState('');
+  const [Téléphone, setTéléphone] = useState('');
+
+  const postUser = async (e) => {
+    e.preventDefault();
+    try {
+      // eslint-disable-next-line no-unused-vars
+      const list = await axios.post(`http://localhost:5000/form`, {
+        Name,
+        Entreprise,
+        Adresse_mail,
+        Téléphone,
+      });
+      setUser(user.data);
+      setName('');
+      setEntreprise('');
+      setAdresse_mail('');
+      setTéléphone('');
+      send();
+    } catch (err) {
+      setError(err);
+      errorForm();
+    }
+  };
+
+  const handleAddName = (e) => {
+    setName(e.target.value);
+  };
+
+  const handleAddEntreprise = (e) => {
+    setEntreprise(e.target.value);
+  };
+
+  // eslint-disable-next-line camelcase
+  const handleAddAdresse_mail = (e) => {
+    setAdresse_mail(e.target.value);
+  };
+
+  const handleAddTéléphone = (e) => {
+    setTéléphone(e.target.value);
+  };
+
   return (
     <>
-      <FormContainer col>
-        <TitlesFormContainer col>
+      <FormContainer onSubmit={postUser}>
+        <ToastContainer
+          position="bottom-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
+        <TitlesFormContainer>
           <TitleForm>Etre rappelé</TitleForm>
           <MainText>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id atque
@@ -68,14 +136,41 @@ export default function Form() {
         </TitlesFormContainer>
         <InputsContainer>
           <AllInputs col>
-            <OneInput type="text" name="lastname" placeholder="Nom" />
-            <OneInput type="text" name="companby" placeholder="Entreprise" />
-            <OneInput type="email" name="email" placeholder="Email" />
-            <ButtonForm type="button">Etre rappelé</ButtonForm>
+            <OneInput
+              type="text"
+              name="Name"
+              placeholder="Nom Prénom"
+              onChange={handleAddName}
+              value={Name}
+            />
+            <OneInput
+              type="text"
+              name="Entreprise"
+              placeholder="Entreprise"
+              onChange={handleAddEntreprise}
+              value={Entreprise}
+            />
+            <ButtonForm type="submit" value="Etre rappelé" />
           </AllInputs>
           <AllInputs col>
-            <OneInput type="text" name="firstname" placeholder="Prénom" />
-            <OneInput type="tel" name="phone" placeholder="Téléphone" />
+            <OneInput
+              type="tel"
+              name="Téléphone"
+              placeholder="Téléphone"
+              pattern="[0-9]{10}"
+              required
+              onChange={handleAddTéléphone}
+              value={Téléphone}
+            />
+            <OneInput
+              type="email"
+              name="Adresse_mail"
+              placeholder="Email"
+              // eslint-disable-next-line camelcase
+              onChange={handleAddAdresse_mail}
+              // eslint-disable-next-line camelcase
+              value={Adresse_mail}
+            />
           </AllInputs>
         </InputsContainer>
       </FormContainer>
