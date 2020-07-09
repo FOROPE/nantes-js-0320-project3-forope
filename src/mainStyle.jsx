@@ -16,7 +16,10 @@ export const Flex = styled.div`
   display: flex;
   flex-direction: ${(props) => (props.col ? 'column' : 'row')};
   justify-content: ${(props) => props.end && 'flex-end'};
+  justify-content: ${(props) => props.center && 'center'};
   justify-content: ${(props) => props.btw && 'space-between'};
+  align-items: ${(props) => props.alignc && 'center'};
+  height: ${(props) => props.full && '100vh'};
 `;
 
 export const TextContent = styled.p`
@@ -102,7 +105,6 @@ export const Subtitle = styled.p`
   font-size: 19px;
 `;
 
-
 export const LinkPage = styled.a`
   color: ${(props) => (props.button ? 'white' : 'black')};
   text-decoration: none;
@@ -112,4 +114,3 @@ export const LinkButton = styled(Link)`
   text-decoration: none;
   color: white;
 `;
-
