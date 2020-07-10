@@ -10,9 +10,9 @@ export default function AwesomeList() {
       { title: 'Rôle', field: 'Rôle' },
       { title: 'E-Mail', field: 'Adresse_mail' },
       {
-        title: 'État',
-        field: 'Etat',
-        lookup: { 1: 'À rapeller', 2: 'Video envoyée' },
+        title: 'Status',
+        field: 'Status',
+        lookup: { 1: 'A rapeller', 2: 'Video envoyée' },
       },
     ],
     data: [],
@@ -39,21 +39,19 @@ export default function AwesomeList() {
       columns={state.columns}
       data={state.data}
       editable={{
-        onRowAdd: (newData) =>
-          new Promise((resolve) => {
-            setTimeout(() => {
-              resolve();
-              setState((prevState) => {
-                const data = [...prevState.data];
-                data.push(newData);
-                return { ...prevState, data };
-              });
-            }, 600);
-          }),
-        onRowUpdate: (newData, oldData) =>
-          new Promise((resolve) => {
-            setTimeout(() => {
-              resolve();
+        onRowAdd: (newData) => {
+          return axios.post(`http://localhost:5000/form`, newData).then(() => {
+            setState((prevState) => {
+              const data = [...prevState.data];
+              data.push(newData);
+              return { ...prevState, data };
+            });
+          });
+        },
+        onRowUpdate: (newData, oldData) => {
+          return axios
+            .put(`http://localhost:5000/form/${oldData.id}`, newData)
+            .then(() => {
               if (oldData) {
                 setState((prevState) => {
                   const data = [...prevState.data];
@@ -61,19 +59,19 @@ export default function AwesomeList() {
                   return { ...prevState, data };
                 });
               }
-            }, 600);
-          }),
-        onRowDelete: (oldData) =>
-          new Promise((resolve) => {
-            setTimeout(() => {
-              resolve();
+            });
+        },
+        onRowDelete: (oldData) => {
+          return axios
+            .delete(`http://localhost:5000/form/${oldData.id}`)
+            .then(() => {
               setState((prevState) => {
                 const data = [...prevState.data];
                 data.splice(data.indexOf(oldData), 1);
                 return { ...prevState, data };
               });
-            }, 600);
-          }),
+            });
+        },
       }}
     />
   );

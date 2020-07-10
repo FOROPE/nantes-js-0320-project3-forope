@@ -6,7 +6,6 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import ClientList from './ClientList';
 import AwesomeList from './AwesomeList';
 
 function TabPanel(props) {
@@ -85,10 +84,10 @@ export default function ClientsNavigation() {
         <Tab label="Item Seven" {...a11yProps(6)} />
       </Tabs>
       <TabPanel value={value} index={0}>
-        <ClientList />
+        <AwesomeList />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <AwesomeList />
+        Item Two
       </TabPanel>
       <TabPanel value={value} index={2}>
         Item Three
