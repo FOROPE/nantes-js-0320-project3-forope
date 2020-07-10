@@ -35,6 +35,7 @@ export default function AwesomeList() {
 
   return (
     <MaterialTable
+      style={{ width: '80vw' }}
       title="Demandes de contact"
       columns={state.columns}
       data={state.data}
