@@ -11,7 +11,7 @@ import Titles from './Titles';
 import Context from './Context';
 import Referencing from './Referencing';
 import AllSteps from './AllSteps';
-import data from '../data/data.json';
+import Data from '../data/data.json';
 
 const BannerGrey = styled.div`
   background: #f4f4f4;
@@ -51,7 +51,10 @@ export default function AnswerPage() {
   return (
     <>
       <Navigation />
-      <BannerTitle theme={`${interlocutor}`} title="..." />
+      <BannerTitle
+        theme={[interlocutor]}
+        title={Data[interlocutor][theme].title}
+      />
       <Context />
       <BannerGrey>
         <BannerPart>

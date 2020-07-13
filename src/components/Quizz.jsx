@@ -98,7 +98,7 @@ export default function Questionaire() {
                 onChange={handleChangeManager}
               >
                 <option value="">--Please choose an option--</option>
-                <option value="excellence-opérationelle">
+                <option value="excellenceoperationelle">
                   Excellence opérationelle
                 </option>
               </SelectItem>
@@ -120,7 +120,7 @@ export default function Questionaire() {
                 <option value="gpec">
                   GPEC / Transférer les savoir-faire au sein des équipes
                 </option>
-                <option value="excellence-oppérationnelle">
+                <option value="excellenceoperationelle">
                   Excellence oppérationnelle
                 </option>
                 <option value="parcours-integration">
