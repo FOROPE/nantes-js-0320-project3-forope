@@ -1,6 +1,6 @@
 {
   "dirigeant": {
-    "excellenceoperationelle": {
+    "cultureperformance": {
       "title": "Développer la culture de la performance de votre entreprise avec le TWI",
       "subtitle": "Avec Forope, nous constatons que l’humain est au coeur de la communication des entreprises du BTP. Maintenant, nous souhaitons passer aux actes.",
       "first_title": "La culture de la performance = Assurer sa rentabilité !",
@@ -21,6 +21,33 @@
       "info": "La FFB estime comme un “impératif” l’adoption d’une culture de la performance pour les entreprises du BTP. En effet, dans un contexte de crise, où la concurrence tire les prix vers le bas, les chantiers doivent gagner en productivité afin de préserver les marges des différents acteurs",
       "bannerinfo": "Développer la culture de la performance avec le TWI en 1 semaine ",
       "titlearticle1": "Faire adopter le digital",
+      "titlearticle2": "Accélérer la mise en place des innovations",
+      "titlearticle3": "Développer la culture environnementale",
+      "contentarticle1": "img",
+      "contentarticle2": "img",
+      "contentarticle3": "img"
+    },
+    "adopterledigital": {
+      "title": "Faire adopter le digital dans votre entreprise de BTP",
+      "subtitle": "Pour Forope, accompagner à la transformation digitale c’est d’abord prendre en compte les utilisateurs afin de déployer avec succès les outils numériques dans le BTP.",
+      "first_title": "Faire adopter le digital = Un enjeu pour tous !",
+      "content1": "Vous avez mis en place des outils digitaux. Mais ils ne sont pas encore adoptés par l’ensemble de vos collaborateurs. Une large partie de votre personnel rencontre encore des difficultés à utiliser les outils numériques à disposition.",
+      "quote1": "",
+      "quote2": "",
+      "quote3": "",
+      "bannergrey1": "Réussir à faire adopter le digital, c’est réduire le gouffre entre ceux pour qui le numérique est inné,",
+      "bannergrey2": "et ceux pour qui le digitale est une réelle difficultée. Il faut les accompagner dans leur travail.",
+      "bannergrey3": "L’objectif est de les rendre plus à l’aise avec les outils, plus efficace et fier de leur travail.",
+      "second_title": "Faire adopter le digital avec FOROPE. Comment cela fonctionne !",
+      "titlestep1": "Audit",
+      "titlestep2": "Echange",
+      "titlestep3": "Action",
+      "bodystep1": "Ecouter votre organisation et réaliser les interviews des collaborateurs. Etude des outils digitaux et des process existant",
+      "bodystep2": "Identifier les freins principaux dans la mise en place du digital. Mettre en avant les forces internes Désigner le pilote de la transition digitale dans l’entreprise",
+      "bodystep3": "S’entourer des experts en interne et formaliser les bonnes pratiques à transmettre. Créer des sessions de formations entre collègues, structurés, courtes et performantes. Planifier de l’écoute individuel et de l’accompagnement au poste",
+      "info": "Prendre appui sur les ressources en interne pour assurer ses formations digitales : Ca marche ! Vos collaborateurs experts en disent juste assez. Les formateurs en interne accompagnent au plus près des besoins. Nous structurons l’entraide au sein des équipes",
+      "bannerinfo": "Structurer les formations internes et faire adopter le digital en 1 semaine",
+      "titlearticle1": "Développer la culture de la performance",
       "titlearticle2": "Accélérer la mise en place des innovations",
       "titlearticle3": "Développer la culture environnementale",
       "contentarticle1": "img",
