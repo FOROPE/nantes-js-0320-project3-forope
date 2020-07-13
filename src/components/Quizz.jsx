@@ -98,8 +98,17 @@ export default function Questionaire() {
                 onChange={handleChangeManager}
               >
                 <option value="">--Please choose an option--</option>
-                <option value="excellenceoperationelle">
-                  Excellence opérationelle
+                <option value="cultureperformance">
+                  Développer la culture de la performance
+                </option>
+                <option value="adopterledigital">
+                  Faire adopter le digital
+                </option>
+                <option value="innovations">
+                  Accélérer la mise en place des innovations
+                </option>
+                <option value="cultureenvironnementale">
+                  Développer la culture environnementale
                 </option>
               </SelectItem>
             </Label>
@@ -117,20 +126,17 @@ export default function Questionaire() {
                 onChange={handleChangeManager}
               >
                 <option value="">--Please choose an option--</option>
-                <option value="gpec">
-                  GPEC / Transférer les savoir-faire au sein des équipes
+                <option value="formationmanagement">
+                  Encadrants - Formation management
                 </option>
-                <option value="excellenceoperationelle">
-                  Excellence oppérationnelle
+                <option value="afest">
+                  Techniciens - Formation en situation de travail - AFEST
                 </option>
-                <option value="parcours-integration">
-                  Constuire un parcours d&apos;intégration efficace
+                <option value="piloteexpérimentation">
+                  RH/Formation - Pilote expérimentation AFEST
                 </option>
-                <option value="competences-management">
-                  Développer les compétences en management
-                </option>
-                <option value="nouveaux-metiers">
-                  Former aux nouveaux métiers
+                <option value="habilitations">
+                  Formation obligatoire - Habilitations
                 </option>
               </SelectItem>
             </Label>
@@ -148,20 +154,13 @@ export default function Questionaire() {
                 onChange={handleChangeManager}
               >
                 <option value="">--Please choose an option--</option>
-                <option value="former-experts">
-                  Former mes experts à transferer leur savoir-faire
+                <option value="formeraumetier">
+                  Former aux fondamentaux du métier
                 </option>
-                <option value="bonnes-pratiques">
-                  S&apos;assurer qu&apos;un nouveau salairé adopte les pratiques
-                  de l&apos;entreprises
+                <option value="fidéliser">Fidéliser ses collaborateurs</option>
+                <option value="securitesante">
+                  Garantir la sécurité et la santé de ses collaborateurs
                 </option>
-                <option value="besoin-formation">
-                  Besoin de formation sur des fondamentaux du métier
-                </option>
-                <option value="competences-management">
-                  Développer les compétences en management
-                </option>
-                <option value="habilitations">Habilitations</option>
               </SelectItem>
             </Label>
           </>
