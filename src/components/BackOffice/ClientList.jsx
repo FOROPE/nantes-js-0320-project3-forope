@@ -18,7 +18,6 @@ const useStyles = makeStyles({
 
 export default function ClientList() {
   const [List, setList] = useState([]);
-  // const [error, setError] = useState();
 
   useEffect(() => {
     const getList = async () => {

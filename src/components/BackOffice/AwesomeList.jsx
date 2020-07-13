@@ -18,9 +18,6 @@ export default function AwesomeList() {
     data: [],
   });
 
-  // const [List, setList] = useState([]);
-  // const [error, setError] = useState();
-
   useEffect(() => {
     const getList = async () => {
       try {
