@@ -54,6 +54,7 @@ export default function AnswerPage() {
       <BannerTitle
         theme={[interlocutor]}
         title={Data[interlocutor][theme].title}
+        subtitle={Data[interlocutor][theme].subtitle}
       />
       <Context
         content1={Data[interlocutor][theme].content1}
@@ -86,11 +87,11 @@ export default function AnswerPage() {
       <Titles text="En +" signs="." />
       <AllArticles
         titlearticle1={Data[interlocutor][theme].titlearticle1}
-        contentarticle1={Data[interlocutor][theme].titlearticle1}
+        contentarticle1={Data[interlocutor][theme].contentarticle1}
         titlearticle2={Data[interlocutor][theme].titlearticle2}
-        contentarticle2={Data[interlocutor][theme].titlearticle2}
+        contentarticle2={Data[interlocutor][theme].contentarticle2}
         titlearticle3={Data[interlocutor][theme].titlearticle3}
-        contentarticle3={Data[interlocutor][theme].titlearticle3}
+        contentarticle3={Data[interlocutor][theme].contentarticle3}
       />
       <Titles align text="Référencement" signs="." />
       <Referencing />
