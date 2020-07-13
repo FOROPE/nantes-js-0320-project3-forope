@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useParams } from 'react-router-dom';
+
 import Navigation from './Navigation';
 import BannerTitle from './TitleBanner';
 import Form from './Formulaire';
@@ -9,6 +11,7 @@ import Titles from './Titles';
 import Context from './Context';
 import Referencing from './Referencing';
 import AllSteps from './AllSteps';
+import data from '../data/data.json';
 
 const BannerGrey = styled.div`
   background: #f4f4f4;
@@ -44,14 +47,11 @@ const StateInfo = styled.div`
 `;
 
 export default function AnswerPage() {
+  const { interlocutor, theme } = useParams();
   return (
     <>
       <Navigation />
-      <BannerTitle
-        theme="Dirigeant"
-        title="L'organisme de formation qui structure la transmission des savoir-faire dans votre entreprise."
-        subtitle='Avec Forop, on valorise les bonnes pratiques en interne et on structure le contenu des formations sur le "travail bien fait"'
-      />
+      <BannerTitle theme={`${interlocutor}`} title="..." />
       <Context />
       <BannerGrey>
         <BannerPart>

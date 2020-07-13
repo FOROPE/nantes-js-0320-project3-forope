@@ -17,7 +17,7 @@ function App() {
         </div>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/page2" component={AnswerPage} />
+          <Route path="/:interlocutor/:theme" component={AnswerPage} />
           <Route path="/client" component={ClientList} />
           <Route path="/back-office" component={LoginBO} />
           <Route path="/dashboard" component={DashboardBO} />
