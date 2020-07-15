@@ -68,27 +68,27 @@ export default function Form() {
   const [user, setUser] = useState([]);
   // eslint-disable-next-line no-unused-vars
   const [error, setError] = useState();
-  const [Name, setName] = useState('');
-  const [Entreprise, setEntreprise] = useState('');
+  const [name, setName] = useState('');
+  const [company, setCompany] = useState('');
   // eslint-disable-next-line camelcase
-  const [Adresse_mail, setAdresse_mail] = useState('');
-  const [Téléphone, setTéléphone] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
 
   const postUser = async (e) => {
     e.preventDefault();
     try {
       // eslint-disable-next-line no-unused-vars
       const list = await axios.post(`http://localhost:5000/form`, {
-        Name,
-        Entreprise,
-        Adresse_mail,
-        Téléphone,
+        name,
+        company,
+        email,
+        phone,
       });
       setUser(user.data);
       setName('');
-      setEntreprise('');
-      setAdresse_mail('');
-      setTéléphone('');
+      setCompany('');
+      setEmail('');
+      setPhone('');
       send();
     } catch (err) {
       setError(err);
@@ -100,17 +100,17 @@ export default function Form() {
     setName(e.target.value);
   };
 
-  const handleAddEntreprise = (e) => {
-    setEntreprise(e.target.value);
+  const handleAddCompany = (e) => {
+    setCompany(e.target.value);
   };
 
   // eslint-disable-next-line camelcase
-  const handleAddAdresse_mail = (e) => {
-    setAdresse_mail(e.target.value);
+  const handleAddEmail = (e) => {
+    setEmail(e.target.value);
   };
 
-  const handleAddTéléphone = (e) => {
-    setTéléphone(e.target.value);
+  const handleAddPhone = (e) => {
+    setPhone(e.target.value);
   };
 
   return (
@@ -138,38 +138,38 @@ export default function Form() {
           <AllInputs col>
             <OneInput
               type="text"
-              name="Name"
+              name="name"
               placeholder="Nom Prénom"
               onChange={handleAddName}
-              value={Name}
+              value={name}
             />
             <OneInput
               type="text"
-              name="Entreprise"
+              name="company"
               placeholder="Entreprise"
-              onChange={handleAddEntreprise}
-              value={Entreprise}
+              onChange={handleAddCompany}
+              value={company}
             />
             <ButtonForm type="submit" value="Etre rappelé" />
           </AllInputs>
           <AllInputs col>
             <OneInput
               type="tel"
-              name="Téléphone"
+              name="phone"
               placeholder="Téléphone"
               pattern="[0-9]{10}"
               required
-              onChange={handleAddTéléphone}
-              value={Téléphone}
+              onChange={handleAddPhone}
+              value={phone}
             />
             <OneInput
               type="email"
-              name="Adresse_mail"
+              name="email"
               placeholder="Email"
               // eslint-disable-next-line camelcase
-              onChange={handleAddAdresse_mail}
+              onChange={handleAddEmail}
               // eslint-disable-next-line camelcase
-              value={Adresse_mail}
+              value={email}
             />
           </AllInputs>
         </InputsContainer>
