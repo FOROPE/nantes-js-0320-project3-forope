@@ -17,6 +17,7 @@ const useStyles = makeStyles({
 });
 
 export default function ClientList() {
+  const [error, setError] = useState;
   const [List, setList] = useState([]);
 
   useEffect(() => {
@@ -25,7 +26,7 @@ export default function ClientList() {
         const list = await axios.get(`http://localhost:5000/form`);
         setList(list.data);
       } catch (err) {
-        // setError(err);
+        setError(err);
       }
     };
     getList();
@@ -39,33 +40,39 @@ export default function ClientList() {
   `;
 
   return (
-    <FixedHeight>
-      <TableContainer component={Paper}>
-        <Table className={classes.table} aria-label="simple table">
-          <TableHead>
-            <TableRow>
-              <TableCell>Nom</TableCell>
-              <TableCell align="right">Entreprise</TableCell>
-              <TableCell align="right">Rôle</TableCell>
-              <TableCell align="right">Adresse Mail</TableCell>
-              <TableCell align="right">Téléphone</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {List.map((client) => (
-              <TableRow key={client.name}>
-                <TableCell component="th" scope="row">
-                  {client.name}
-                </TableCell>
-                <TableCell align="right">{client.company}</TableCell>
-                <TableCell align="right">{client.role}</TableCell>
-                <TableCell align="right">{client.email}</TableCell>
-                <TableCell align="right">{client.phone}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
-    </FixedHeight>
+    <>
+      {error ? (
+        <div> Something went wrong </div>
+      ) : (
+        <FixedHeight>
+          <TableContainer component={Paper}>
+            <Table className={classes.table} aria-label="simple table">
+              <TableHead>
+                <TableRow>
+                  <TableCell>Nom</TableCell>
+                  <TableCell align="right">Entreprise</TableCell>
+                  <TableCell align="right">Rôle</TableCell>
+                  <TableCell align="right">Adresse Mail</TableCell>
+                  <TableCell align="right">Téléphone</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {List.map((client) => (
+                  <TableRow key={client.name}>
+                    <TableCell component="th" scope="row">
+                      {client.name}
+                    </TableCell>
+                    <TableCell align="right">{client.company}</TableCell>
+                    <TableCell align="right">{client.role}</TableCell>
+                    <TableCell align="right">{client.email}</TableCell>
+                    <TableCell align="right">{client.phone}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
+        </FixedHeight>
+      )}
+    </>
   );
 }
