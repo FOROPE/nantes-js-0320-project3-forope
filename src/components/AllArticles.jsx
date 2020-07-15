@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import Article from './Article';
 import { Flex } from '../mainStyle';
 
@@ -9,27 +10,36 @@ const ContainerAllArticles = styled(Flex)`
   flex-wrap: wrap;
 `;
 
-export default function AllArticles() {
+export default function AllArticles({
+  titlearticle1,
+  titlearticle2,
+  titlearticle3,
+  contentarticle1,
+  contentarticle2,
+  contentarticle3,
+}) {
   return (
     <ContainerAllArticles>
+      <Article title={titlearticle1} content={contentarticle1} />
       <Article
-        title="Première actu."
-        content="Viens découvrir tout ce qu’on faire, on est des super champions de la
-        formation de formateurs."
+        title={titlearticle2}
+        content={contentarticle2}
         seeMore="En savoir plus"
       />
       <Article
-        title="Deuxième actu."
-        content="Viens découvrir tout ce qu’on faire, on est des super champions de la
-        formation de formateurs."
-        seeMore="En savoir plus"
-      />
-      <Article
-        title="Troisième actu."
-        content="Viens découvrir tout ce qu’on faire, on est des super champions de la
-        formation de formateurs."
+        title={titlearticle3}
+        content={contentarticle3}
         seeMore="En savoir plus"
       />
     </ContainerAllArticles>
   );
 }
+
+AllArticles.propTypes = {
+  titlearticle1: PropTypes.string.isRequired,
+  titlearticle2: PropTypes.string.isRequired,
+  titlearticle3: PropTypes.string.isRequired,
+  contentarticle1: PropTypes.string.isRequired,
+  contentarticle2: PropTypes.string.isRequired,
+  contentarticle3: PropTypes.string.isRequired,
+};

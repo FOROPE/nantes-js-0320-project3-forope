@@ -4,7 +4,9 @@ import { ThemeProvider } from 'styled-components';
 import theme from './theme';
 import Home from './components/Home';
 import AnswerPage from './components/AnswerPage';
-import ClientList from './components/ClientList';
+import ClientList from './components/BackOffice/ClientList';
+import LoginBO from './components/BackOffice/LoginBO';
+import DashboardBO from './components/BackOffice/DashboardBO';
 
 function App() {
   return (
@@ -15,8 +17,10 @@ function App() {
         </div>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/page2" component={AnswerPage} />
+          <Route path="/:interlocutor/:theme" component={AnswerPage} />
           <Route path="/client" component={ClientList} />
+          <Route path="/back-office" component={LoginBO} />
+          <Route path="/dashboard" component={DashboardBO} />
         </Switch>
       </Router>
     </ThemeProvider>

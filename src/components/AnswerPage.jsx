@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useParams } from 'react-router-dom';
+
 import Navigation from './Navigation';
 import BannerTitle from './TitleBanner';
 import Form from './Formulaire';
@@ -9,6 +11,7 @@ import Titles from './Titles';
 import Context from './Context';
 import Referencing from './Referencing';
 import AllSteps from './AllSteps';
+import Data from '../data/data.json';
 
 const BannerGrey = styled.div`
   background: #f4f4f4;
@@ -44,48 +47,52 @@ const StateInfo = styled.div`
 `;
 
 export default function AnswerPage() {
+  const { interlocutor, theme } = useParams();
   return (
     <>
       <Navigation />
       <BannerTitle
-        theme="Dirigeant"
-        title="L'organisme de formation qui structure la transmission des savoir-faire dans votre entreprise."
-        subtitle='Avec Forop, on valorise les bonnes pratiques en interne et on structure le contenu des formations sur le "travail bien fait"'
+        theme={[interlocutor]}
+        title={Data[interlocutor][theme].title}
+        subtitle={Data[interlocutor][theme].subtitle}
       />
-      <Context />
+      <Context
+        content1={Data[interlocutor][theme].content1}
+        quote1={Data[interlocutor][theme].quote1}
+        quote2={Data[interlocutor][theme].quote2}
+        quote3={Data[interlocutor][theme].quote3}
+      />
       <BannerGrey>
-        <BannerPart>
-          L&apos;action Forope Développer rapidement et efficacement la
-          transmission des savoir-faire
-        </BannerPart>
-        <BannerPart>
-          Notre méthode Vous rendre autonome en 1 semaine et structurer vos
-          formations chantier
-        </BannerPart>
-        <BannerPart>
-          Pour vous On axe votre plan de formation sur la formation métier car
-          c&apos;est votre besoin
-        </BannerPart>
+        <BannerPart>{Data[interlocutor][theme].bannergrey1}</BannerPart>
+        <BannerPart>{Data[interlocutor][theme].bannergrey2}</BannerPart>
+        <BannerPart>{Data[interlocutor][theme].bannergrey3}</BannerPart>
       </BannerGrey>
-      <Titles text="Comment ça fonctionne" signs=" !" />
-      <AllSteps />
+      <Titles text={Data[interlocutor][theme].second_title} />
+      <AllSteps
+        titlestep1={Data[interlocutor][theme].titlestep1}
+        bodystep1={Data[interlocutor][theme].bodystep1}
+        titlestep2={Data[interlocutor][theme].titlestep2}
+        bodystep2={Data[interlocutor][theme].bodystep2}
+        titlestep3={Data[interlocutor][theme].titlestep3}
+        bodystep3={Data[interlocutor][theme].bodystep3}
+      />
       <StateInfo>
-        <p>L&apos;état Français, accompagne les entreprises</p>
-        <p>
-          qui souhaitent maintenir leur niveau d&apos;excellence et mise sur
-          l&apos;AFEST (Action de Formation En Situation de Travail) pour la
-          transmission des savoir-faire Le 5 septembre 2018, la loi pour “la
-          liberté de choisir son avenir professionnel” définit la formation
-          chantier comme action de formation à part entière.
-        </p>
+        <p>{Data[interlocutor][theme].info}</p>
       </StateInfo>
       <BannerOrange>
-        <p>Développer la culture de la performance avec le TWI en 1 semaine</p>
+        <p>{Data[interlocutor][theme].bannerinfo}</p>
       </BannerOrange>
       <Titles align text="Nous contacter" signs="." />
       <Form />
       <Titles text="En +" signs="." />
-      <AllArticles />
+      <AllArticles
+        titlearticle1={Data[interlocutor][theme].titlearticle1}
+        contentarticle1={Data[interlocutor][theme].contentarticle1}
+        titlearticle2={Data[interlocutor][theme].titlearticle2}
+        contentarticle2={Data[interlocutor][theme].contentarticle2}
+        titlearticle3={Data[interlocutor][theme].titlearticle3}
+        contentarticle3={Data[interlocutor][theme].contentarticle3}
+      />
       <Titles align text="Référencement" signs="." />
       <Referencing />
       <Footer />

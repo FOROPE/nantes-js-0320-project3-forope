@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import Step from './Step';
 import { Flex } from '../mainStyle';
 
@@ -10,29 +11,28 @@ const ContainerAllSteps = styled(Flex)`
   flex-wrap: wrap;
 `;
 
-export default function AllSteps() {
+export default function AllSteps({
+  titlestep1,
+  titlestep2,
+  titlestep3,
+  bodystep1,
+  bodystep2,
+  bodystep3,
+}) {
   return (
     <ContainerAllSteps>
-      <Step
-        numberStep="1"
-        title="Préparation"
-        body="Se rencontrer pour : réaliser le diagnostic
-terrain et les interviews, débriefer avec les
-acteurs du projet pour identifier les projets
-pilotes, organiser la démarche d’accompa-
-gnement."
-      />
-      <Step
-        numberStep="2"
-        title="Formation"
-        body="Former au TWI pour : valoriser les savoir-faire internes Créer les contenus de
-        formation avec les experts métiers, apprendre à former avec méthode."
-      />
-      <Step
-        numberStep="3"
-        title="Accompagnement"
-        body="Superviser pour : lever les freins et obtenir des résultats, ancrer durablement les bonnes pratiques, ajuster et vous mettre en autonomie sur le TWI"
-      />
+      <Step numberStep="1" title={titlestep1} body={bodystep1} />
+      <Step numberStep="2" title={titlestep2} body={bodystep2} />
+      <Step numberStep="3" title={titlestep3} body={bodystep3} />
     </ContainerAllSteps>
   );
 }
+
+AllSteps.propTypes = {
+  titlestep1: PropTypes.string.isRequired,
+  titlestep2: PropTypes.string.isRequired,
+  titlestep3: PropTypes.string.isRequired,
+  bodystep1: PropTypes.string.isRequired,
+  bodystep2: PropTypes.string.isRequired,
+  bodystep3: PropTypes.string.isRequired,
+};

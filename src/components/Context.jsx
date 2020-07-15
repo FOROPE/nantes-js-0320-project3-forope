@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
-
-import { Flex, Content, Punctuation, Italic, Subtitle } from '../mainStyle';
-
+import { Flex, Content, Italic, Subtitle } from '../mainStyle';
 
 const PartTitle = styled.h3`
   color: ${(props) => props.theme.mediumGreen};
@@ -22,36 +21,27 @@ const ContainerFlex = styled.div`
   width: 45%;
 `;
 
-export default function Context() {
+export default function Context({
+  subtitle,
+  firstTitle,
+  content1,
+  quote1,
+  quote2,
+  quote3,
+}) {
   return (
     <>
-      <TitleContext>
-        La transmission des savoir-faire : un défi concret !
-      </TitleContext>
+      <TitleContext>{subtitle}</TitleContext>
       <Content>
         <ContainerFlex col>
           <Flex col>
-            <PartTitle>
-              La transmission des savoir-faire : un défi concret !
-            </PartTitle>
-            <Subtitle>
-              Pour répondre aux besoins de leurs clients, 200.000 entreprises du
-              BTP vont devoir
-              <Punctuation>anticiper les départs à la retraite </Punctuation>des
-              collaborateurs en structurant le transfert des compétences et
-              <Punctuation>former efficacement </Punctuation>les nouveaux
-              embauchés
-            </Subtitle>
+            <PartTitle>{firstTitle}</PartTitle>
+            <Subtitle>{content1}</Subtitle>
           </Flex>
           <Flex col>
-            <Italic>
-              “La moitié des nouveaux entrants n’ont jamais travaillé dans le
-              BTP”
-            </Italic>
-            <Italic>
-              “¼ des ouvriers du bâtiment seront à la retraite d’ici 10 ans”
-            </Italic>
-            <Italic>Observatoire des métiers du BTP, 2018</Italic>
+            <Italic>{quote1}</Italic>
+            <Italic>{quote2} </Italic>
+            <Italic>{quote3}</Italic>
           </Flex>
         </ContainerFlex>
         <ContainerFlex col>
@@ -61,3 +51,12 @@ export default function Context() {
     </>
   );
 }
+
+Context.propTypes = {
+  subtitle: PropTypes.string.isRequired,
+  firstTitle: PropTypes.string.isRequired,
+  content1: PropTypes.string.isRequired,
+  quote1: PropTypes.string.isRequired,
+  quote2: PropTypes.string.isRequired,
+  quote3: PropTypes.string.isRequired,
+};
