@@ -53,14 +53,14 @@ export default function ClientList() {
           </TableHead>
           <TableBody>
             {List.map((client) => (
-              <TableRow key={client.Name}>
+              <TableRow key={client.name}>
                 <TableCell component="th" scope="row">
-                  {client.Name}
+                  {client.name}
                 </TableCell>
-                <TableCell align="right">{client.Entreprise}</TableCell>
-                <TableCell align="right">{client.Rôle}</TableCell>
-                <TableCell align="right">{client.Adresse_mail}</TableCell>
-                <TableCell align="right">{client.Téléphone}</TableCell>
+                <TableCell align="right">{client.company}</TableCell>
+                <TableCell align="right">{client.role}</TableCell>
+                <TableCell align="right">{client.email}</TableCell>
+                <TableCell align="right">{client.phone}</TableCell>
               </TableRow>
             ))}
           </TableBody>

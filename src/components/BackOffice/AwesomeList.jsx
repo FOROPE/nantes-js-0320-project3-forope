@@ -5,13 +5,13 @@ import MaterialTable from 'material-table';
 export default function AwesomeList() {
   const [state, setState] = useState({
     columns: [
-      { title: 'Name', field: 'Name' },
-      { title: 'Entreprise', field: 'Entreprise' },
-      { title: 'Rôle', field: 'Rôle' },
-      { title: 'E-Mail', field: 'Adresse_mail' },
+      { title: 'Name', field: 'name' },
+      { title: 'Entreprise', field: 'company' },
+      { title: 'Rôle', field: 'role' },
+      { title: 'E-Mail', field: 'email' },
       {
         title: 'Status',
-        field: 'Status',
+        field: 'status',
         lookup: { 1: 'A rapeller', 2: 'Video envoyée' },
       },
     ],
