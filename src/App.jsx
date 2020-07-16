@@ -7,6 +7,7 @@ import AnswerPage from './components/AnswerPage';
 import ClientList from './components/BackOffice/ClientList';
 import LoginBO from './components/BackOffice/LoginBO';
 import DashboardBO from './components/BackOffice/DashboardBO';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/:interlocutor/:theme" component={AnswerPage} />
+          <Route path="/contact" component={Contact} />
           <Route path="/client" component={ClientList} />
           <Route path="/back-office" component={LoginBO} />
           <Route path="/dashboard" component={DashboardBO} />
