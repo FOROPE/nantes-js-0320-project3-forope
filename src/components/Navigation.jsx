@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Logo from './img/Logo.svg';
-import { Punctuation, LinkPage } from '../mainStyle';
+import { Punctuation, LinkButton } from '../mainStyle';
 
 const ContainerNav = styled.nav`
   display: flex;
@@ -38,7 +39,9 @@ const LogoNav = styled.img`
 export default function Navigation() {
   return (
     <ContainerNav>
-      <LogoNav src={Logo} alt="logo" />
+      <Link to="/">
+        <LogoNav src={Logo} alt="logo" />
+      </Link>
       <NavList>
         <NavItem>Entreprise</NavItem>
         <NavItem>Particulier</NavItem>
@@ -46,9 +49,9 @@ export default function Navigation() {
           <Punctuation>Pourquoi nous ?</Punctuation>
         </NavItem>
         <NavButton>
-          <LinkPage button href="/#" src="contact">
+          <LinkButton button to="/contact">
             Contact
-          </LinkPage>
+          </LinkButton>
         </NavButton>
       </NavList>
     </ContainerNav>

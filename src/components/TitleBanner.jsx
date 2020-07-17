@@ -30,6 +30,7 @@ const TitleTheme = styled.p`
   color: ${(props) => props.theme.orange};
   align-self: flex-start;
   margin: 0;
+  text-transform: uppercase;
 `;
 
 const BackgroundBanner = styled.img`

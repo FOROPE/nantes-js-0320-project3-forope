@@ -3,7 +3,7 @@ import axios from 'axios';
 import MaterialTable from 'material-table';
 
 export default function AwesomeList() {
-  const [error, setError] = useState;
+  const [error, setError] = useState();
   const [state, setState] = useState({
     columns: [
       { title: 'Name', field: 'name' },
