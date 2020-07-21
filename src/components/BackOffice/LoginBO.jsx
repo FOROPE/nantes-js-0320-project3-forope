@@ -13,6 +13,7 @@ export default function LoginBO() {
   return (
     <Flex col center alignc full>
       <FormContainer>
+        {/* eslint jsx-a11y/label-has-associated-control: ["error", { assert: "either" } ] */}
         <label htmlFor="Identifiant">
           Identifiant
           <InputForm type="text" name="Identifiant" id="Identifiant" />
