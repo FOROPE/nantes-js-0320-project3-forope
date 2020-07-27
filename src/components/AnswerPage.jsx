@@ -18,10 +18,19 @@ const BannerGrey = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 5rem 9rem;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+  }
 `;
 
 const BannerPart = styled.div`
   width: 25%;
+  @media (max-width: 800px) {
+    width: 80%;
+    padding: 1rem;
+  }
 `;
 
 const BannerOrange = styled.div`
@@ -36,14 +45,24 @@ const BannerOrange = styled.div`
   padding: 4rem 9rem;
   font-size: 30px;
   color: white;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
 `;
 
 const StateInfo = styled.div`
   display: flex;
-  margin: 4rem 30rem;
-  flex-direction: column;
-  align-items: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
   text-align: center;
+
+  @media (max-width: 700px) {
+    width: 80%;
+  }
 `;
 
 export default function AnswerPage() {
@@ -59,6 +78,7 @@ export default function AnswerPage() {
       <Context
         content1={Data[interlocutor][theme].content1}
         photo={Data[interlocutor][theme].photo}
+        subtitle={Data[interlocutor][theme].first_title}
         quote1={Data[interlocutor][theme].quote1}
         quote2={Data[interlocutor][theme].quote2}
         quote3={Data[interlocutor][theme].quote3}

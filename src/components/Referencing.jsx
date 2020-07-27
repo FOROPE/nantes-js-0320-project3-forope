@@ -10,17 +10,37 @@ const Container = styled(Flex)`
   padding: 2rem;
   margin: auto;
   font-size: 19px;
+  @media (max-width: 1100px) {
+    flex-direction: column;
+  }
 `;
 
 const ColumnOne = styled.div`
-  width: 50%;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 1100px) {
+    width: 100%;
+  }
 `;
 
 const ListItem = styled.ul`
   list-style: none;
+
+  @media (max-width: 1100px) {
+    padding-left: 0;
+  }
+`;
+
+const Text = styled.p`
+  text-align: center;
 `;
 
 const Item = styled.li`
+  margin-bottom: 1rem;
+`;
+
+const Img = styled.img`
   margin-bottom: 1rem;
 `;
 
@@ -28,12 +48,12 @@ export default function Referencing() {
   return (
     <Container>
       <ColumnOne>
-        <img src="https://via.placeholder.com/300x80" alt="logo Forope" />
-        <img src="https://via.placeholder.com/300x80" alt="logo Contructys" />
-        <p>
+        <Img src="https://via.placeholder.com/300x80" alt="logo Forope" />
+        <Img src="https://via.placeholder.com/300x80" alt="logo Contructys" />
+        <Text>
           Forope est un organisme de formation référencé par Constructys. Pour
           vous, nous nous occupons de tout et vous facilitons la vie
-        </p>
+        </Text>
       </ColumnOne>
 
       <div>
