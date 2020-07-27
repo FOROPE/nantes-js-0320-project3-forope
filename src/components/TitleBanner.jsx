@@ -11,6 +11,13 @@ const TitlesBanner = styled(Flex)`
   left: 0;
   margin: 2rem 6rem;
   width: 40%;
+  @media (max-width: 900px) {
+    width: 70%;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 `;
 
 const TitleBanner = styled.h1`

@@ -14,11 +14,23 @@ const FormContainer = styled.form`
   flex-direction: column;
 `;
 
+const Container = styled.div`
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+`;
+
 const TitlesFormContainer = styled.div`
   align-items: start;
   width: 50%;
   display: flex;
   flex-direction: column;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 `;
 
 const TitleForm = styled.h3`
@@ -38,11 +50,18 @@ const InputsContainer = styled(Flex)`
   width: 100%;
   margin-right: 4rem;
   justify-content: space-between;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 const AllInputs = styled(Flex)`
   width: 40%;
   justify-content: flex-start;
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 `;
 
 const OneInput = styled(InputForm)`
@@ -134,45 +153,47 @@ export default function Form() {
             voluptatem repellat non dignissimos ullam pariatur.
           </MainText>
         </TitlesFormContainer>
-        <InputsContainer>
-          <AllInputs col>
-            <OneInput
-              type="text"
-              name="name"
-              placeholder="Nom Prénom"
-              onChange={handleAddName}
-              value={name}
-            />
-            <OneInput
-              type="text"
-              name="company"
-              placeholder="Entreprise"
-              onChange={handleAddCompany}
-              value={company}
-            />
-            <ButtonForm type="submit" value="Etre rappelé" />
-          </AllInputs>
-          <AllInputs col>
-            <OneInput
-              type="tel"
-              name="phone"
-              placeholder="Téléphone"
-              pattern="[0-9]{10}"
-              required
-              onChange={handleAddPhone}
-              value={phone}
-            />
-            <OneInput
-              type="email"
-              name="email"
-              placeholder="Email"
-              // eslint-disable-next-line camelcase
-              onChange={handleAddEmail}
-              // eslint-disable-next-line camelcase
-              value={email}
-            />
-          </AllInputs>
-        </InputsContainer>
+        <Container>
+          <InputsContainer>
+            <AllInputs col>
+              <OneInput
+                type="text"
+                name="name"
+                placeholder="Nom Prénom"
+                onChange={handleAddName}
+                value={name}
+              />
+              <OneInput
+                type="text"
+                name="company"
+                placeholder="Entreprise"
+                onChange={handleAddCompany}
+                value={company}
+              />
+            </AllInputs>
+            <AllInputs col>
+              <OneInput
+                type="tel"
+                name="phone"
+                placeholder="Téléphone"
+                pattern="[0-9]{10}"
+                required
+                onChange={handleAddPhone}
+                value={phone}
+              />
+              <OneInput
+                type="email"
+                name="email"
+                placeholder="Email"
+                // eslint-disable-next-line camelcase
+                onChange={handleAddEmail}
+                // eslint-disable-next-line camelcase
+                value={email}
+              />
+            </AllInputs>
+          </InputsContainer>
+          <ButtonForm type="submit" value="Etre rappelé" />
+        </Container>
       </FormContainer>
     </>
   );
