@@ -58,6 +58,7 @@ export default function AnswerPage() {
       />
       <Context
         content1={Data[interlocutor][theme].content1}
+        photo={Data[interlocutor][theme].photo}
         quote1={Data[interlocutor][theme].quote1}
         quote2={Data[interlocutor][theme].quote2}
         quote3={Data[interlocutor][theme].quote3}
