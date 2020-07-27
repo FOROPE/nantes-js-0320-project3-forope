@@ -13,12 +13,18 @@ const TitleContext = styled.h2`
   font-size: 28px;
   color: ${(props) => props.theme.mediumGreen};
   margin: 3rem 6rem;
+  @media (max-width: 700px) {
+    margin: 1rem;
+  }
 `;
 
 const ContainerFlex = styled.div`
   display: flex;
   flex-direction: column;
   width: 45%;
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 `;
 
 export default function Context({

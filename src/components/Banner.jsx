@@ -1,12 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { ContainerBanner, Flex } from '../mainStyle';
+import { ContainerBanner } from '../mainStyle';
 import truck from './img/truck2.png';
 
-const TitlesBanner = styled(Flex)`
-  justify-content: center;
-  align-items: center;
+const TitlesBanner = styled.div`
   position: absolute;
 `;
 

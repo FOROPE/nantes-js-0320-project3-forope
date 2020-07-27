@@ -6,9 +6,11 @@ import { Flex } from '../mainStyle';
 
 const ContainerAllSteps = styled(Flex)`
   justify-content: space-evenly;
-  width: 80%;
-  margin: 0 9rem;
   flex-wrap: wrap;
+  @media (max-width: 900px) {
+    margin: 0rem;
+    width: 100%;
+  }
 `;
 
 export default function AllSteps({

@@ -8,6 +8,10 @@ const ContainerAllArticles = styled(Flex)`
   margin: 0 3rem;
   justify-content: space-between;
   flex-wrap: wrap;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-content: center;
+  }
 `;
 
 export default function AllArticles({
