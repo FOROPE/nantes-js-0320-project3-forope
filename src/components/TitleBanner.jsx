@@ -13,10 +13,7 @@ const TitlesBanner = styled(Flex)`
   width: 40%;
   @media (max-width: 900px) {
     width: 70%;
-  }
-
-  @media (max-width: 500px) {
-    width: 100%;
+    margin: 2rem;
   }
 `;
 

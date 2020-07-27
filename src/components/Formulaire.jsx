@@ -7,7 +7,7 @@ import { Flex, TextContent, InputForm } from '../mainStyle';
 const FormContainer = styled.form`
   margin: auto;
   width: 50%;
-  padding: 1rem 4rem 1rem 4rem;
+  padding: 2rem 4rem 2rem 4rem;
   background-color: ${(props) => props.theme.orange};
   color: white;
   display: flex;
