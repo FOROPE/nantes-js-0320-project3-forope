@@ -44,10 +44,11 @@ export const TitleH2 = styled.h2`
   width: ${(props) => props.quizz && '60%'};
   color: ${(props) => props.theme.mediumGreen};
   margin: ${(props) => (props.quizz ? '0' : '3rem 6rem')};
-  @media (max-width: 700px) {
+
+  ${(props) => props.theme.mediaMax.small`
     margin: 1rem;
     width: 100%;
-  }
+  `};
 `;
 
 export const TitleH3 = styled.h3`
@@ -99,13 +100,14 @@ export const Content = styled.div`
   margin: 0 9rem;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 800px) {
+
+  ${(props) => props.theme.mediaMax.small`
     flex-direction: column;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
-  }
+  `};
 `;
 
 export const Italic = styled.p`
