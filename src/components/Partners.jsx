@@ -28,13 +28,10 @@ export default function Partners() {
   return (
     <ClientContainer>
       <ClientText>
-        Pour vous présenter loffre Alan adaptée à vos besoins, on a besoin den
-        savoir un tout petit peu plus ! Toutes ces entreprises nous ont fait
-        confiance. HE HE, on se la raconte, pourquoi pas vous, vous ne serez pas
-        déçu. lov keur, on voublas aime. Pour vous présenter loffre Alan adaptée
-        à vos besoins, on a besoin den savoir un tout petit peu plus ! Toutes
-        ces entreprises nous ont fait confiance. HE HE, on se la raconte,
-        pourquoi pas vous, vous ne serez pas déçu. lov keur, on vous aime.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+        maxime laborum, doloremque aspernatur in dolore a voluptatem, atque
+        veritatis illo sunt ullam necessitatibus consequuntur ratione? Nulla
+        assumenda totam ipsam cumque!
       </ClientText>
       <Logos>
         <Logo src="https://via.placeholder.com/100" alt="placeholder" />

@@ -14,6 +14,8 @@ const ContainerFooter = styled(Flex)`
   ${(props) => props.theme.mediaMax.small`
     flex-direction: column;
     align-items: center;
+    padding: O;
+
   `};
 `;
 
@@ -21,6 +23,10 @@ const ListItem = styled.ul`
   list-style: none;
   text-align: left;
   color: white;
+
+  ${(props) => props.theme.mediaMax.small`
+  padding: 0;
+  `};
 `;
 
 const ListLogo = styled.li`
