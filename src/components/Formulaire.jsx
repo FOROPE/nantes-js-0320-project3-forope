@@ -99,7 +99,7 @@ export default function Form() {
     e.preventDefault();
     try {
       // eslint-disable-next-line no-unused-vars
-      const list = await axios.post(`http://localhost:5000/form`, {
+      const list = await axios.post(`https://nantes-js-202003-p3-forope-backend.jsrover.wilders.dev/form`, {
         name,
         company,
         email,

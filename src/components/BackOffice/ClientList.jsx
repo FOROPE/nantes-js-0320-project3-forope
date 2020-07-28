@@ -23,7 +23,7 @@ export default function ClientList() {
   useEffect(() => {
     const getList = async () => {
       try {
-        const list = await axios.get(`http://localhost:5000/form`);
+        const list = await axios.get(`https://nantes-js-202003-p3-forope-backend.jsrover.wilders.dev/form`);
         setList(list.data);
       } catch (err) {
         setError(err);
