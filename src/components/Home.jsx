@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import Navigation from './Navigation';
 import Banner from './Banner';
 import Questionaire from './Quizz';
@@ -11,9 +12,15 @@ import Titles from './Titles';
 import Partners from './Partners';
 import Data from '../data/data.json';
 
+const HomeContainer = styled.div`
+  ${(props) => props.theme.mediaMax.small`
+    text-align:center;
+  `};
+`;
+
 export default function Home() {
   return (
-    <>
+    <HomeContainer>
       <Navigation />
       <Banner logo={LogoFull} />
       <Questionaire />
@@ -30,6 +37,6 @@ export default function Home() {
       <Titles align text="Témoignages" signs="." />
       <AllTestimonies />
       <Footer logo={logowhite} />
-    </>
+    </HomeContainer>
   );
 }

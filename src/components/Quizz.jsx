@@ -8,11 +8,22 @@ const ZoneContainer = styled(Flex)`
   width: 80%;
   margin: 0 9rem 2rem 9rem;
   padding-top: 2rem;
+  ${(props) => props.theme.mediaMax.small`
+    align-items:center;
+    margin:0;
+
+    width:100%;
+    justify-content:center;
+  `};
 `;
 
 const QuizzContainer = styled(Flex)`
   text-align: left;
   width: 40%;
+  ${(props) => props.theme.mediaMax.small`
+    width:90%;
+    text-align:center;
+  `};
 `;
 
 const Label = styled.label`
@@ -38,11 +49,17 @@ const ContentQuizz = styled.p`
   margin-top: 0.3em;
   width: 70%;
   font-size: 19px;
+  ${(props) => props.theme.mediaMax.small`
+    width:100%;
+  `};
 `;
 
 const QuizzIllustration = styled.img`
   height: 400px;
   margin-right: 4rem;
+  ${(props) => props.theme.mediaMax.small`
+    display:none;
+  `};
 `;
 
 const SelectItem = styled.select`
