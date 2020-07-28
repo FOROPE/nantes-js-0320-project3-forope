@@ -13,6 +13,7 @@ const Container = styled(Flex)`
 
   ${(props) => props.theme.mediaMax.large`
     flex-direction: column;
+    width: 60%;
   `};
 `;
 

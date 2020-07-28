@@ -39,6 +39,7 @@ const ListLink = styled(Flex)`
   ${(props) => props.theme.mediaMax.small`
   flex-direction: column;
   margin: O;
+  margin-right: 0;
   `};
 `;
 

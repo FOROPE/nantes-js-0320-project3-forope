@@ -10,13 +10,13 @@ const IconArrow = styled.i`
 
 export default function Btn({ seeMore, quizz, link }) {
   return (
-    <Button quizz={quizz} type="button">
-      <LinkButton to={link}>
+    <LinkButton to={link}>
+      <Button quizz={quizz} type="button">
         {' '}
         {seeMore}
         <IconArrow className="fas fa-chevron-circle-right" />
-      </LinkButton>
-    </Button>
+      </Button>
+    </LinkButton>
   );
 }
 Btn.propTypes = {

@@ -16,6 +16,7 @@ const TitleContext = styled.h2`
 
   ${(props) => props.theme.mediaMax.small`
     margin: 1rem;
+    text-align: center;
   `};
 `;
 

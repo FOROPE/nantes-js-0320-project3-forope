@@ -23,12 +23,16 @@ const QuizzContainer = styled(Flex)`
   ${(props) => props.theme.mediaMax.small`
     width:90%;
     text-align:center;
+    align-items: center;
   `};
 `;
 
 const Label = styled.label`
   margin-bottom: 1rem;
   font-size: 19px;
+  ${(props) => props.theme.mediaMax.small`
+    text-align: left;
+  `};
 
   .persona-selection {
     border: none;
@@ -60,6 +64,15 @@ const QuizzIllustration = styled.img`
   ${(props) => props.theme.mediaMax.small`
     display:none;
   `};
+`;
+
+const ContainerAnswer = styled.div`
+  ${(props) => props.theme.mediaMax.small`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+`}
 `;
 
 const SelectItem = styled.select`
@@ -201,14 +214,14 @@ export default function Questionaire() {
         )}
 
         {YouWant && (
-          <div>
+          <ContainerAnswer>
             <QuoteQuizz>Super, nous pouvons vous aider !</QuoteQuizz>
             <ContentQuizz>
               Viens découvrir tout ce qu’on faire, on est des super champions de
               la formation de formateurs.
             </ContentQuizz>
             <Btn quizz seeMore="Découvrir" link={`${YouAre}/${YouWant}`} />
-          </div>
+          </ContainerAnswer>
         )}
       </QuizzContainer>
 
