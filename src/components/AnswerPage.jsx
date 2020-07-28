@@ -77,6 +77,7 @@ export default function AnswerPage() {
       />
       <Context
         content1={Data[interlocutor][theme].content1}
+        photo={Data[interlocutor][theme].photo}
         subtitle={Data[interlocutor][theme].first_title}
         quote1={Data[interlocutor][theme].quote1}
         quote2={Data[interlocutor][theme].quote2}
