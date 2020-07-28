@@ -20,17 +20,16 @@ const ArticleTitle = styled.h3`
   font-size: 24px;
 `;
 
-const ArticleText = styled.p`
-  color: white;
-  font-size: 19px;
+const ArticleImg = styled.img`
   margin-bottom: 7rem;
+  width: 100%;
 `;
 
 export default function Article({ title, content }) {
   return (
     <ContainerArticle>
       <ArticleTitle>{title}</ArticleTitle>
-      <ArticleText>{content}</ArticleText>
+      <ArticleImg src={content} />
       <Btn seeMore="En savoir plus" />
     </ContainerArticle>
   );

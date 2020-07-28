@@ -29,6 +29,10 @@ const ContainerFlex = styled.div`
   `};
 `;
 
+const Image = styled.img`
+  width: 100%;
+`;
+
 export default function Context({
   subtitle,
   firstTitle,
@@ -36,6 +40,7 @@ export default function Context({
   quote1,
   quote2,
   quote3,
+  /* photo, */
 }) {
   return (
     <>
@@ -53,7 +58,8 @@ export default function Context({
           </Flex>
         </ContainerFlex>
         <ContainerFlex col>
-          <img src="https://via.placeholder.com/200" alt="illustration" />
+          // eslint-disable-next-line global-require
+          <Image /* src={require(`./img/${photo}`)} */ alt="illustration" />
         </ContainerFlex>
       </Content>
     </>
@@ -64,7 +70,8 @@ Context.propTypes = {
   subtitle: PropTypes.string.isRequired,
   firstTitle: PropTypes.string.isRequired,
   content1: PropTypes.string.isRequired,
-  quote1: PropTypes.string.isRequired,
+  /*   photo: PropTypes.string.isRequired,
+   */ quote1: PropTypes.string.isRequired,
   quote2: PropTypes.string.isRequired,
   quote3: PropTypes.string.isRequired,
 };
