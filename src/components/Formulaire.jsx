@@ -15,12 +15,12 @@ const FormContainer = styled.form`
 `;
 
 const Container = styled.div`
-  @media (max-width: 800px) {
+  ${(props) => props.theme.mediaMax.small`
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-  }
+  `}
 `;
 
 const TitlesFormContainer = styled.div`
@@ -28,9 +28,9 @@ const TitlesFormContainer = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
-  @media (max-width: 900px) {
+  ${(props) => props.theme.mediaMax.normal`
     width: 100%;
-  }
+  `};
 `;
 
 const TitleForm = styled.h3`
@@ -51,17 +51,18 @@ const InputsContainer = styled(Flex)`
   margin-right: 4rem;
   justify-content: space-between;
 
-  @media (max-width: 800px) {
+  ${(props) => props.theme.mediaMax.small`
     flex-direction: column;
-  }
+  `};
 `;
 
 const AllInputs = styled(Flex)`
   width: 40%;
   justify-content: flex-start;
-  @media (max-width: 800px) {
+
+  ${(props) => props.theme.mediaMax.small`
     width: 100%;
-  }
+  `};
 `;
 
 const OneInput = styled(InputForm)`

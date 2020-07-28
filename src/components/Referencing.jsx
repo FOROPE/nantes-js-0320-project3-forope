@@ -10,26 +10,27 @@ const Container = styled(Flex)`
   padding: 2rem;
   margin: auto;
   font-size: 19px;
-  @media (max-width: 1100px) {
+  ${(props) => props.theme.mediaMax.large`
     flex-direction: column;
-  }
+  `};
 `;
 
 const ColumnOne = styled.div`
   align-content: center;
   display: flex;
   flex-direction: column;
-  @media (max-width: 1100px) {
+
+  ${(props) => props.theme.mediaMax.large`
     width: 100%;
-  }
+  `};
 `;
 
 const ListItem = styled.ul`
   list-style: none;
 
-  @media (max-width: 1100px) {
+  ${(props) => props.theme.mediaMax.large`
     padding-left: 0;
-  }
+  `};
 `;
 
 const Text = styled.p`
