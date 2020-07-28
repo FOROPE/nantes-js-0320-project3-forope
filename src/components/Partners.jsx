@@ -44,10 +44,10 @@ export default function Partners() {
   return (
     <ClientContainer>
       <ClientText>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
-        atque quo quas sit voluptatem possimus consectetur ad inventore aperiam
-        vitae natus cum, et dicta dolor! Doloremque harum aliquid assumenda
-        quas!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+        maxime laborum, doloremque aspernatur in dolore a voluptatem, atque
+        veritatis illo sunt ullam necessitatibus consequuntur ratione? Nulla
+        assumenda totam ipsam cumque!
       </ClientText>
       <Logos>
         <Logo src="https://via.placeholder.com/100" alt="placeholder" />
