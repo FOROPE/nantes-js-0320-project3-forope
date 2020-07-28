@@ -29,6 +29,7 @@ const ListLogo = styled.li`
 
 const ListLink = styled(Flex)`
   margin-right: 2rem;
+
   ${(props) => props.theme.mediaMax.small`
   flex-direction: column;
   margin: O;

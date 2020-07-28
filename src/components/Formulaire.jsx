@@ -28,6 +28,7 @@ const TitlesFormContainer = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
+
   ${(props) => props.theme.mediaMax.normal`
     width: 100%;
   `};

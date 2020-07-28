@@ -10,6 +10,7 @@ const Container = styled(Flex)`
   padding: 2rem;
   margin: auto;
   font-size: 19px;
+
   ${(props) => props.theme.mediaMax.large`
     flex-direction: column;
   `};

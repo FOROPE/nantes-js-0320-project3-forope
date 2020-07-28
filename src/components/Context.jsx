@@ -13,6 +13,7 @@ const TitleContext = styled.h2`
   font-size: 28px;
   color: ${(props) => props.theme.mediumGreen};
   margin: 3rem 6rem;
+
   ${(props) => props.theme.mediaMax.small`
     margin: 1rem;
   `};

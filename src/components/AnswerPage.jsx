@@ -61,6 +61,7 @@ const StateInfo = styled.div`
   margin-right: auto;
   margin-bottom: 2rem;
   text-align: center;
+
   ${(props) => props.theme.mediaMax.small`
     width: 80%;
   `};

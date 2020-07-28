@@ -8,7 +8,6 @@ const ContainerAllArticles = styled(Flex)`
   margin: 0 3rem;
   justify-content: space-between;
   flex-wrap: wrap;
-
   ${(props) => props.theme.mediaMax.normal`
     flex-direction: column;
     align-content: center;
