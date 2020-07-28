@@ -1,21 +1,10 @@
 {
-  "home": {
-    "home": {
-      "titlearticle1": "Faire adopter le digital",
-      "titlearticle2": "Accélérer la mise en place des innovations",
-      "titlearticle3": "Développer la culture environnementale",
-      "contentarticle1": "digital.jpeg",
-      "contentarticle2": "innovation.jpeg",
-      "contentarticle3": "employee.jpeg"
-    }
-  },
   "dirigeant": {
     "cultureperformance": {
       "title": "Développer la culture de la performance de votre entreprise avec le TWI",
       "subtitle": "Avec Forope, nous constatons que l’humain est au coeur de la communication des entreprises du BTP. Maintenant, nous souhaitons passer aux actes.",
       "first_title": "La culture de la performance = Assurer sa rentabilité !",
       "content1": "Concrètement, les entreprises du BTP doivent assurer leur rentabilité et augmenter leur valeur ajoutée",
-      "photo": "helmet.jpeg",
       "quote1": "\"En moyenne, les entreprises du BTP sont rentable à 2 ou 3% (Résultat net/Chiffre d’affaire)\"",
       "quote2": "\"Le personnel représente plus de 80% des charges dans le calcul de la Valeur Ajoutée en 2018\"",
       "quote3": "\"Etude BTP Banque, 2018\"",
@@ -34,16 +23,15 @@
       "titlearticle1": "Faire adopter le digital",
       "titlearticle2": "Accélérer la mise en place des innovations",
       "titlearticle3": "Développer la culture environnementale",
-      "contentarticle1": "digital.jpeg",
-      "contentarticle2": "innovation.jpeg",
-      "contentarticle3": "employee.jpeg"
+      "contentarticle1": "img",
+      "contentarticle2": "img",
+      "contentarticle3": "img"
     },
     "adopterledigital": {
       "title": "Faire adopter le digital dans votre entreprise de BTP",
       "subtitle": "Pour Forope, accompagner à la transformation digitale c’est d’abord prendre en compte les utilisateurs afin de déployer avec succès les outils numériques dans le BTP.",
       "first_title": "Faire adopter le digital = Un enjeu pour tous !",
       "content1": "Vous avez mis en place des outils digitaux. Mais ils ne sont pas encore adoptés par l’ensemble de vos collaborateurs. Une large partie de votre personnel rencontre encore des difficultés à utiliser les outils numériques à disposition.",
-      "photo": "digital.jpeg",
       "quote1": "",
       "quote2": "",
       "quote3": "",
@@ -62,16 +50,15 @@
       "titlearticle1": "Développer la culture de la performance",
       "titlearticle2": "Accélérer la mise en place des innovations",
       "titlearticle3": "Développer la culture environnementale",
-      "contentarticle1": "helmet.jpeg",
-      "contentarticle2": "innovation.jpeg",
-      "contentarticle3": "employee.jpeg"
+      "contentarticle1": "img",
+      "contentarticle2": "img",
+      "contentarticle3": "img"
     },
     "innovations": {
       "title": "Accélérer la mise en place des innovations dans votre entreprise",
       "subtitle": "L’innovation dans le BTP s'accélère (Outils digitaux et de collaboration, procédés et matériaux de construction innovants ou déploiement de nouvelles technologies). Forope vous accompagne dans la démarche.",
       "first_title": "Accélérer la mise en place des innovations = un enjeux majeur !",
       "content1": "Les outils et procédés nouveaux souhaitent améliorer la sécurité et l’expérience des collaborateurs au travail. Ils permettent aux entreprises de conquérir de nouveaux marchés, d’améliorer leur productivité et de s’engager dans une démarche de développement durable.",
-      "photo": "innovation.jpeg",
       "quote1": "Innovation et BTP : la transformation du secteur est en marche 2018",
       "quote2": "",
       "quote3": "",
@@ -90,16 +77,15 @@
       "titlearticle1": "Développer la culture de la performance",
       "titlearticle2": "Faire adopter le digital",
       "titlearticle3": "Développer la culture environnementale",
-      "contentarticle1": "helmet.jpeg",
-      "contentarticle2": "digital.jpeg",
-      "contentarticle3": "employee.jpeg"
+      "contentarticle1": "img",
+      "contentarticle2": "img",
+      "contentarticle3": "img"
     },
     "cultureenvironnementale": {
       "title": "Développer la culture environnementale  de votre entreprise de btp",
       "subtitle": "Pour Forope, le défi des entreprises du BTP est d’adapter leurs méthodes d’organisation et de gestion en prenant en compte l’impact environnemental dû à leur activité.",
       "first_title": "Développer la culture environnementale = un sujet d’actualité !",
       "content1": "Le bâtiment est au coeur de la lutte contre le changement climatique actuel. Les enjeux sont colossaux sur les chantiers de toutes tailles. Le bâtiment est au coeur de la lutte contre le changement climatique actuel. Les enjeux sont colossaux sur les chantiers de toutes tailles.",
-      "photo": "employee.jpeg",
       "quote1": "Innovation et BTP : la transformation du secteur est en marche 2018",
       "quote2": "",
       "quote3": "",
@@ -118,9 +104,9 @@
       "titlearticle1": "Développer la culture de la performance",
       "titlearticle2": "Faire adopter le digital",
       "titlearticle3": "Accélérer la mise en place des innovations",
-      "contentarticle1": "helmet.jpeg",
-      "contentarticle2": "digital.jpeg",
-      "contentarticle3": "innovation.jpeg"
+      "contentarticle1": "img",
+      "contentarticle2": "img",
+      "contentarticle3": "img"
     }
   },
 
@@ -130,7 +116,6 @@
       "subtitle": "Le secteur de la Construction évolue en permanence à travers de nouvelles normes, réglementations, techniques et nouveaux  outils... Forope développe les compétences de vos frigoristes en les formant à l'attestation d’aptitude à la manipulation des fluides frigorigènes de niveau 1 grâce à la FEST.",
       "first_title": "Valider ses formations obligatoires = Assurer une expertise !",
       "content1": "Nous souhaitons améliorer le taux de réussite des participants à l’attestation d’aptitude à la manipulation des fluides frigorigènes de niveau 1. En nous basant sur la FEST et le TWI, nous mettons en place une formation où l’apprentissage par la pratique est la norme.",
-      "photo": "compulsory-training.jpeg",
       "quote1": "",
       "quote2": "",
       "quote3": "",
@@ -149,9 +134,9 @@
       "titlearticle1": "Formation au management",
       "titlearticle2": "Formation En Situation de Travail",
       "titlearticle3": "Pilote expérimentation AFEST",
-      "contentarticle1": "training-management.jpeg",
-      "contentarticle2": "afest.jpeg",
-      "contentarticle3": "afest-experimentation.jpeg"
+      "contentarticle1": "img",
+      "contentarticle2": "img",
+      "contentarticle3": "img"
     },
 
     "formationmanagement": {
@@ -159,7 +144,6 @@
       "subtitle": "Pour Forope, les manageurs de proximité sont la clé de voûte d’une entreprise performante. Nous souhaitons consolider leur savoir-faire afin de les équiper au mieux pour les rendre efficace dans leur travail.",
       "first_title": "Se former au management = Progresser dans son rôle de leader !",
       "content1": "Manager des équipes ne s’improvisent pas. L’ensemble des compétences demandées sont vastes et demande à être consolidés. Elles concernent notamment la gestion du temps, gestion des conflits et l’organisation des routines de management.",
-      "photo": "training-management.jpeg",
       "quote1": "",
       "quote2": "",
       "quote3": "",
@@ -178,9 +162,9 @@
       "titlearticle1": "Formation en Situation de Travail",
       "titlearticle2": "Pilote expérimentation AFEST",
       "titlearticle3": "Formation obligatoire - Habilitation",
-      "contentarticle1": "afest.jpeg",
-      "contentarticle2": "afest-experimentation.jpeg",
-      "contentarticle3": "compulsory-training.jpeg"
+      "contentarticle1": "img",
+      "contentarticle2": "img",
+      "contentarticle3": "img"
     },
 
     "piloteexpérimentation": {
@@ -188,7 +172,6 @@
       "subtitle": "Afin de faire évoluer la formation technique au sein des entreprises, Forope accompagne les personnes souhaitant mettre en place des parcours de formation en interne de type FEST (Formation en Situation de Travail).",
       "first_title": "Piloter une expérimentation AFEST = Créer de la compétence !",
       "content1": "Le manque de savoir-faire dans les entreprises du BTP est un frein au développement économique des entreprises. Aujourd’hui, afin de combler le manque de compétences, la FEST est l’alternative préférée des entreprises pour former leurs opérationnels.",
-      "photo": "afest.jpeg",
       "quote1": "",
       "quote2": "",
       "quote3": "",
@@ -207,9 +190,9 @@
       "titlearticle1": "Formation au management",
       "titlearticle2": "Formation en situation de travail",
       "titlearticle3": "Formation obligatoire - Habilitations",
-      "contentarticle1": "training-management.jpeg",
-      "contentarticle2": "afest.jpeg",
-      "contentarticle3": "compulsory-training.jpeg"
+      "contentarticle1": "img",
+      "contentarticle2": "img",
+      "contentarticle3": "img"
     },
 
     "afest": {
@@ -217,7 +200,6 @@
       "subtitle": "Pour continuer à évoluer, les techniciens de tous niveaux doivent être accompagnés dans leur plan de formation. Les Actions de Formation en Situation de Travail répondent concrètement à leurs besoins opérationnels.",
       "first_title": "Mettre en place des AFEST = Acquérir des compétences clés !",
       "content1": "Développer rapidement et efficacement les compétences des techniciens est une urgence pour les entreprises du BTP. En effet, celles-ci doivent pallier à un manque de compétences chroniques dans leurs équipes. Former les nouveaux arrivants comme ceux déjà en place est une priorité.",
-      "photo": "afest-experimentation.jpeg",
       "quote1": "",
       "quote2": "",
       "quote3": "",
@@ -236,9 +218,9 @@
       "titlearticle1": "Formation au management",
       "titlearticle2": "Formation en situation de travail",
       "titlearticle3": "Formation obligatoire - Habilitations",
-      "contentarticle1": "training-management.jpeg",
-      "contentarticle2": "afest.jpeg",
-      "contentarticle3": "compulsory-training.jpeg"
+      "contentarticle1": "img",
+      "contentarticle2": "img",
+      "contentarticle3": "img"
     }
   }
 }
