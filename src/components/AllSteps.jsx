@@ -7,10 +7,11 @@ import { Flex } from '../mainStyle';
 const ContainerAllSteps = styled(Flex)`
   justify-content: space-evenly;
   flex-wrap: wrap;
-  @media (max-width: 900px) {
-    margin: 0rem;
+
+  ${(props) => props.theme.mediaMax.normal`
+   margin: 0rem;
     width: 100%;
-  }
+  `};
 `;
 
 export default function AllSteps({

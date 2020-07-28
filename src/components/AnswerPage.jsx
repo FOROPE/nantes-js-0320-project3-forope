@@ -18,19 +18,20 @@ const BannerGrey = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 5rem 9rem;
-  @media (max-width: 800px) {
+
+  ${(props) => props.theme.mediaMax.small`
     flex-direction: column;
     padding: 1rem;
     align-items: center;
-  }
+  `};
 `;
 
 const BannerPart = styled.div`
   width: 25%;
-  @media (max-width: 800px) {
+  ${(props) => props.theme.mediaMax.small`
     width: 80%;
     padding: 1rem;
-  }
+  `};
 `;
 
 const BannerOrange = styled.div`
@@ -45,11 +46,12 @@ const BannerOrange = styled.div`
   padding: 4rem 9rem;
   font-size: 30px;
   color: white;
-  @media (max-width: 800px) {
+
+  ${(props) => props.theme.mediaMax.small`
     flex-direction: column;
     padding: 1rem;
     text-align: center;
-  }
+  `};
 `;
 
 const StateInfo = styled.div`
@@ -60,9 +62,9 @@ const StateInfo = styled.div`
   margin-bottom: 2rem;
   text-align: center;
 
-  @media (max-width: 700px) {
+  ${(props) => props.theme.mediaMax.small`
     width: 80%;
-  }
+  `};
 `;
 
 export default function AnswerPage() {

@@ -11,10 +11,10 @@ const ContainerFooter = styled(Flex)`
   font-size: 1rem;
   justify-content: space-between;
 
-  @media (max-width: 800px) {
+  ${(props) => props.theme.mediaMax.small`
     flex-direction: column;
     align-items: center;
-  }
+  `};
 `;
 
 const ListItem = styled.ul`
@@ -29,27 +29,29 @@ const ListLogo = styled.li`
 
 const ListLink = styled(Flex)`
   margin-right: 2rem;
-  @media (max-width: 800px) {
-    flex-direction: column;
-    margin: O;
-  }
+
+  ${(props) => props.theme.mediaMax.small`
+  flex-direction: column;
+  margin: O;
+  `};
 `;
 
 const ContainerLogo = styled.ul`
   list-style: none;
   text-align: left;
 
-  @media (max-width: 800px) {
-    text-align: center;
-    padding: 0;
-  }
+  ${(props) => props.theme.mediaMax.small`
+  text-align: center;
+  padding: 0;
+  `};
 `;
 
 const Item = styled.li`
   padding-top: 0.5rem;
-  @media (max-width: 800px) {
+
+  ${(props) => props.theme.mediaMax.small`
     text-align: center;
-  }
+  `};
 `;
 
 const CompanyLogo = styled.img`
