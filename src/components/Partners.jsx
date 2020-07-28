@@ -4,12 +4,11 @@ import { Flex } from '../mainStyle';
 
 const ClientContainer = styled(Flex)`
   margin: 1rem 9rem;
-  justify-content: center;
+  justify-content: space-around;
 `;
 
 const ClientText = styled.div`
   width: 30%;
-  padding-right: 10rem;
   text-align: left;
   font-size: 19px;
 `;

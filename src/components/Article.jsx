@@ -8,6 +8,11 @@ const ContainerArticle = styled.div`
   width: 25%;
   padding: 2rem;
   text-align: left;
+
+  ${(props) => props.theme.mediaMax.normal`
+    width: 70%;
+    margin-bottom: 2rem;
+  `};
 `;
 
 const ArticleTitle = styled.h3`

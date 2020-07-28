@@ -13,12 +13,20 @@ const TitleContext = styled.h2`
   font-size: 28px;
   color: ${(props) => props.theme.mediumGreen};
   margin: 3rem 6rem;
+
+  ${(props) => props.theme.mediaMax.small`
+    margin: 1rem;
+  `};
 `;
 
 const ContainerFlex = styled.div`
   display: flex;
   flex-direction: column;
   width: 45%;
+
+  ${(props) => props.theme.mediaMax.small`
+    width: 100%;
+  `};
 `;
 
 export default function Context({

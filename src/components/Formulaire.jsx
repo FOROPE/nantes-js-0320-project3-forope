@@ -7,11 +7,20 @@ import { Flex, TextContent, InputForm } from '../mainStyle';
 const FormContainer = styled.form`
   margin: auto;
   width: 50%;
-  padding: 1rem 4rem 1rem 4rem;
+  padding: 2rem 4rem 2rem 4rem;
   background-color: ${(props) => props.theme.orange};
   color: white;
   display: flex;
   flex-direction: column;
+`;
+
+const Container = styled.div`
+  ${(props) => props.theme.mediaMax.small`
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  `}
 `;
 
 const TitlesFormContainer = styled.div`
@@ -19,6 +28,10 @@ const TitlesFormContainer = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
+
+  ${(props) => props.theme.mediaMax.normal`
+    width: 100%;
+  `};
 `;
 
 const TitleForm = styled.h3`
@@ -38,11 +51,19 @@ const InputsContainer = styled(Flex)`
   width: 100%;
   margin-right: 4rem;
   justify-content: space-between;
+
+  ${(props) => props.theme.mediaMax.small`
+    flex-direction: column;
+  `};
 `;
 
 const AllInputs = styled(Flex)`
   width: 40%;
   justify-content: flex-start;
+
+  ${(props) => props.theme.mediaMax.small`
+    width: 100%;
+  `};
 `;
 
 const OneInput = styled(InputForm)`
@@ -134,45 +155,47 @@ export default function Form() {
             voluptatem repellat non dignissimos ullam pariatur.
           </MainText>
         </TitlesFormContainer>
-        <InputsContainer>
-          <AllInputs col>
-            <OneInput
-              type="text"
-              name="name"
-              placeholder="Nom Prénom"
-              onChange={handleAddName}
-              value={name}
-            />
-            <OneInput
-              type="text"
-              name="company"
-              placeholder="Entreprise"
-              onChange={handleAddCompany}
-              value={company}
-            />
-            <ButtonForm type="submit" value="Etre rappelé" />
-          </AllInputs>
-          <AllInputs col>
-            <OneInput
-              type="tel"
-              name="phone"
-              placeholder="Téléphone"
-              pattern="[0-9]{10}"
-              required
-              onChange={handleAddPhone}
-              value={phone}
-            />
-            <OneInput
-              type="email"
-              name="email"
-              placeholder="Email"
-              // eslint-disable-next-line camelcase
-              onChange={handleAddEmail}
-              // eslint-disable-next-line camelcase
-              value={email}
-            />
-          </AllInputs>
-        </InputsContainer>
+        <Container>
+          <InputsContainer>
+            <AllInputs col>
+              <OneInput
+                type="text"
+                name="name"
+                placeholder="Nom Prénom"
+                onChange={handleAddName}
+                value={name}
+              />
+              <OneInput
+                type="text"
+                name="company"
+                placeholder="Entreprise"
+                onChange={handleAddCompany}
+                value={company}
+              />
+            </AllInputs>
+            <AllInputs col>
+              <OneInput
+                type="tel"
+                name="phone"
+                placeholder="Téléphone"
+                pattern="[0-9]{10}"
+                required
+                onChange={handleAddPhone}
+                value={phone}
+              />
+              <OneInput
+                type="email"
+                name="email"
+                placeholder="Email"
+                // eslint-disable-next-line camelcase
+                onChange={handleAddEmail}
+                // eslint-disable-next-line camelcase
+                value={email}
+              />
+            </AllInputs>
+          </InputsContainer>
+          <ButtonForm type="submit" value="Etre rappelé" />
+        </Container>
       </FormContainer>
     </>
   );

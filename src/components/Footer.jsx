@@ -10,6 +10,11 @@ const ContainerFooter = styled(Flex)`
   margin-top: 1.5rem;
   font-size: 1rem;
   justify-content: space-between;
+
+  ${(props) => props.theme.mediaMax.small`
+    flex-direction: column;
+    align-items: center;
+  `};
 `;
 
 const ListItem = styled.ul`
@@ -24,15 +29,29 @@ const ListLogo = styled.li`
 
 const ListLink = styled(Flex)`
   margin-right: 2rem;
+
+  ${(props) => props.theme.mediaMax.small`
+  flex-direction: column;
+  margin: O;
+  `};
 `;
 
 const ContainerLogo = styled.ul`
   list-style: none;
   text-align: left;
+
+  ${(props) => props.theme.mediaMax.small`
+  text-align: center;
+  padding: 0;
+  `};
 `;
 
 const Item = styled.li`
   padding-top: 0.5rem;
+
+  ${(props) => props.theme.mediaMax.small`
+    text-align: center;
+  `};
 `;
 
 const CompanyLogo = styled.img`

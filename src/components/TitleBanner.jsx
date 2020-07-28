@@ -11,6 +11,11 @@ const TitlesBanner = styled(Flex)`
   left: 0;
   margin: 2rem 6rem;
   width: 40%;
+
+  ${(props) => props.theme.mediaMax.normal`
+  width: 70%;
+  margin: 2rem;
+  `};
 `;
 
 const TitleBanner = styled.h1`

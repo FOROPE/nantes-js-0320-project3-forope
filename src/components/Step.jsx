@@ -6,6 +6,11 @@ import { TitleH3, Flex, TextContent, TitleH4 } from '../mainStyle';
 const ContainerStep = styled(Flex)`
   align-items: center;
   width: 25%;
+
+  ${(props) => props.theme.mediaMax.normal`
+   width: 100%;
+    margin: 0 2rem;
+  `};
 `;
 
 export default function Step({ numberStep, title, body }) {
