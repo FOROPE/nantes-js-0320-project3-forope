@@ -43,9 +43,6 @@ export default function Navigation() {
         <LogoNav src={Logo} alt="logo" />
       </Link>
       <NavList>
-        <NavItem>
-          <Punctuation>Pourquoi nous ?</Punctuation>
-        </NavItem>
         <NavButton>
           <LinkButton button to="/contact">
             Contact
