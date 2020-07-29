@@ -31,7 +31,7 @@ const MainText = styled.p`
 
 export default function Testimony({ orange, name, content }) {
   return (
-    <ContainerTestimony col orange={orange}>
+    <ContainerTestimony col orange="true">
       <ContainerTop>
         <UserImg
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Tramway_de_Qu%C3%A9bec_%281897%29_-_Cercle_blanc.svg/1200px-Tramway_de_Qu%C3%A9bec_%281897%29_-_Cercle_blanc.svg.png"
@@ -45,7 +45,7 @@ export default function Testimony({ orange, name, content }) {
 }
 
 Testimony.propTypes = {
-  orange: PropTypes.string.isRequired,
+  orange: PropTypes.bool,
   name: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
 };

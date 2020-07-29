@@ -12,7 +12,6 @@ export default function Btn({ seeMore, quizz, link }) {
   return (
     <LinkButton to={link}>
       <Button quizz={quizz} type="button">
-        {' '}
         {seeMore}
         <IconArrow className="fas fa-chevron-circle-right" />
       </Button>
@@ -21,6 +20,6 @@ export default function Btn({ seeMore, quizz, link }) {
 }
 Btn.propTypes = {
   seeMore: PropTypes.string.isRequired,
-  quizz: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
+  quizz: PropTypes.string,
+  link: PropTypes.string,
 };

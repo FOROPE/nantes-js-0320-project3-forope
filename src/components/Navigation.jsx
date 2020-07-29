@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Logo from './img/Logo.svg';
-import { Punctuation, LinkButton } from '../mainStyle';
+import { LinkButton } from '../mainStyle';
 
 const ContainerNav = styled.nav`
   display: flex;
