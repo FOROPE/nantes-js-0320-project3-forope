@@ -19,6 +19,9 @@ const BackgroundBanner = styled.img`
 
 const LogoHome = styled.img`
   height: 150px;
+  ${(props) => props.theme.mediaMax.xSmall`
+  height: 120px;
+  `};
 `;
 
 export default function Banner({ logo }) {

@@ -21,8 +21,8 @@ const NavList = styled.ul`
 const NavItem = styled.li`
   list-style: none;
   padding: 0px;
-  margin-right: 3rem;
-  font-size: 19px;
+  margin-right: 1rem;
+  font-size: 16px;
 `;
 
 const NavButton = styled(NavItem)`
@@ -43,8 +43,6 @@ export default function Navigation() {
         <LogoNav src={Logo} alt="logo" />
       </Link>
       <NavList>
-        <NavItem>Entreprise</NavItem>
-        <NavItem>Particulier</NavItem>
         <NavItem>
           <Punctuation>Pourquoi nous ?</Punctuation>
         </NavItem>

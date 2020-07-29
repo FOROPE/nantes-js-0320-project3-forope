@@ -24,15 +24,18 @@ export default function AllArticles({
 }) {
   return (
     <ContainerAllArticles>
-      <Article title={titlearticle1} content={contentarticle1} />
+      <Article
+        title={titlearticle1}
+        content={require(`./img/${contentarticle1}`)}
+      />
       <Article
         title={titlearticle2}
-        content={contentarticle2}
+        content={require(`./img/${contentarticle2}`)}
         seeMore="En savoir plus"
       />
       <Article
         title={titlearticle3}
-        content={contentarticle3}
+        content={require(`./img/${contentarticle3}`)}
         seeMore="En savoir plus"
       />
     </ContainerAllArticles>

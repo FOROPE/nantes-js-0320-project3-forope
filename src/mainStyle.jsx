@@ -46,8 +46,9 @@ export const TitleH2 = styled.h2`
   margin: ${(props) => (props.quizz ? '0' : '3rem 6rem')};
 
   ${(props) => props.theme.mediaMax.small`
-    margin: 1rem;
+    margin: 2rem;
     width: 100%;
+    text-align: center
   `};
 `;
 

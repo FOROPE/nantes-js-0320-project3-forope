@@ -10,6 +10,7 @@ const ContainerTestimony = styled(Flex)`
   color: white;
   padding: 1rem;
   width: 20rem;
+  margin-bottom: 1rem;
 `;
 
 const ContainerTop = styled(Flex)`

@@ -10,11 +10,15 @@ const TitlesBanner = styled(Flex)`
   position: absolute;
   left: 0;
   margin: 2rem 6rem;
-  width: 40%;
+  width: 50%;
+  ${(props) => props.theme.mediaMax.xLarge`
+    width: 70%;
+    margin: 4rem 2rem 1rem 2rem;
+  `};
 
-  ${(props) => props.theme.mediaMax.normal`
-  width: 70%;
-  margin: 2rem;
+  ${(props) => props.theme.mediaMax.small`
+    margin: 4rem 2rem 1rem 2rem;
+    width: 90%;
   `};
 `;
 
@@ -22,6 +26,9 @@ const TitleBanner = styled.h1`
   font-size: 30px;
   margin-bottom: 1rem;
   color: ${(props) => props.theme.mediumGreen};
+  ${(props) => props.theme.mediaMax.small`
+  font-size: 28px;
+  `};
 `;
 
 const SubtitleBanner = styled.p`

@@ -8,16 +8,31 @@ const ZoneContainer = styled(Flex)`
   width: 80%;
   margin: 0 9rem 2rem 9rem;
   padding-top: 2rem;
+  ${(props) => props.theme.mediaMax.small`
+    align-items:center;
+    margin:0;
+
+    width:100%;
+    justify-content:center;
+  `};
 `;
 
 const QuizzContainer = styled(Flex)`
   text-align: left;
   width: 40%;
+  ${(props) => props.theme.mediaMax.small`
+    width:90%;
+    text-align:center;
+    align-items: center;
+  `};
 `;
 
 const Label = styled.label`
   margin-bottom: 1rem;
   font-size: 19px;
+  ${(props) => props.theme.mediaMax.small`
+    text-align: left;
+  `};
 
   .persona-selection {
     border: none;
@@ -38,11 +53,26 @@ const ContentQuizz = styled.p`
   margin-top: 0.3em;
   width: 70%;
   font-size: 19px;
+  ${(props) => props.theme.mediaMax.small`
+    width:100%;
+  `};
 `;
 
 const QuizzIllustration = styled.img`
   height: 400px;
   margin-right: 4rem;
+  ${(props) => props.theme.mediaMax.small`
+    display:none;
+  `};
+`;
+
+const ContainerAnswer = styled.div`
+  ${(props) => props.theme.mediaMax.small`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+`}
 `;
 
 const SelectItem = styled.select`
@@ -184,14 +214,14 @@ export default function Questionaire() {
         )}
 
         {YouWant && (
-          <div>
+          <ContainerAnswer>
             <QuoteQuizz>Super, nous pouvons vous aider !</QuoteQuizz>
             <ContentQuizz>
               Viens découvrir tout ce qu’on faire, on est des super champions de
               la formation de formateurs.
             </ContentQuizz>
             <Btn quizz seeMore="Découvrir" link={`${YouAre}/${YouWant}`} />
-          </div>
+          </ContainerAnswer>
         )}
       </QuizzContainer>
 
