@@ -18,7 +18,7 @@ export default function AllTestimonies() {
           Harum dolorem inventore qui? Quibusdam accusantium illo quisquam quod
           eveniet rem?Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           Libero minus, delectus ad illum aliquam iste."
-        orange
+        orangebg
       />
       <Testimony
         name="Pascal Gentil, 20 ans, RH chez pfizer"
@@ -35,7 +35,7 @@ export default function AllTestimonies() {
           Harum dolorem inventore qui? Quibusdam accusantium illo quisquam quod
           eveniet rem?Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           Libero minus, delectus ad illum aliquam iste."
-        orange
+        orangebg
       />
       <Testimony
         name="Juste Leblanc, 20 ans, RH chez pfizer"
