@@ -4,7 +4,7 @@ import { TitleH2, Flex, Punctuation } from '../mainStyle';
 
 export default function Titles({ text, align, signs, quizz }) {
   return (
-    <Flex end={align}>
+    <Flex end="true">
       <TitleH2 quizz={quizz}>
         {text}
         <Punctuation>{signs}</Punctuation>
@@ -15,7 +15,7 @@ export default function Titles({ text, align, signs, quizz }) {
 
 Titles.propTypes = {
   text: PropTypes.string.isRequired,
-  align: PropTypes.string.isRequired,
+  align: PropTypes.bool,
   signs: PropTypes.string.isRequired,
-  quizz: PropTypes.string.isRequired,
+  quizz: PropTypes.string,
 };

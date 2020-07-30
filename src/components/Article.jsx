@@ -18,6 +18,7 @@ const ContainerArticle = styled.div`
 const ArticleTitle = styled.h3`
   color: white;
   font-size: 24px;
+  height: 15%;
 `;
 
 const ArticleImg = styled.img`

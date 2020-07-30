@@ -51,7 +51,7 @@ const QuoteQuizz = styled.p`
 
 const ContentQuizz = styled.p`
   margin-top: 0.3em;
-  width: 70%;
+  width: 100%;
   font-size: 19px;
   ${(props) => props.theme.mediaMax.small`
     width:100%;
